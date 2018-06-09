@@ -16,7 +16,7 @@
 #### 修改时间：
 	2018-06-09
 #### 修改内容：
-	
+	增加了IP地址的动态获取方式，避免了在不同的局域网范围内修改服务端的IP地址
 #### 接口调用：	
 	TCP tcp = new TCP();
 	private Dictionary<string, Socket> clientConnectionItems = tcp.GetKeyValuePairs();
