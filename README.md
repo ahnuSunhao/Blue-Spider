@@ -11,7 +11,7 @@ github上传使用步骤
 4.在本地文件夹下右击选择git bash，输入git clone +我们项目的网址（我会传到群里,或者你们直接去我们的项目中复制）
 
 5.全部clone后，你们进入自己的分支，
-命令：git branch -b sunhao origin/sunhao（sunhao是我们建立的分支名）,-b是在本地创建一个名为sunhao的分支，和GitHub数据库上的sunhao连接
+命令：git checkout -b sunhao origin/sunhao（sunhao是我们建立的分支名）,-b是在本地创建一个名为sunhao的分支，和GitHub数据库上的sunhao连接
 
 6.在里面修改文件后，比如修改了1.doc文件，修改完毕后，在git bash中输入:git add 1.doc
 
