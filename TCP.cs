@@ -22,7 +22,7 @@ namespace Blue_Spider
         
         public TCP(){  
             socketlisten = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp); 
-            IPAddress address = IPAddress.Parse("192.168.1.100");  
+            IPAddress address = IPAddress.Parse(GetIpAddress());  
             IPEndPoint point = new IPEndPoint(address, 8989);  
             socketlisten.Bind(point); 
             socketlisten.Listen(20);  
@@ -94,6 +94,16 @@ namespace Blue_Spider
         public Dictionary<string, Socket> GetKeyValuePairs()
         {
             return clientConnectionItems;
+        }
+
+        public string GetIpAddress()
+        {
+            string hostName = Dns.GetHostName();   //获取本机名
+            IPHostEntry localhost = Dns.GetHostByName(hostName);    //方法已过期，可以获取IPv4的地址
+                                                                    //IPHostEntry localhost = Dns.GetHostEntry(hostName);   //获取IPv6地址
+            IPAddress localaddr = localhost.AddressList[0];
+
+            return localaddr.ToString();
         }
 
     }
