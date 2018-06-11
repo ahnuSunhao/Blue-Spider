@@ -28,28 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_sendN = new System.Windows.Forms.Button();
+            this.btn_SendN = new System.Windows.Forms.Button();
             this.btn_send1 = new System.Windows.Forms.Button();
             this.btn_select = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Message = new System.Windows.Forms.TextBox();
             this.lb_IPPort = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.File = new System.Windows.Forms.TextBox();
-            this.Message = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btn_sendN
+            // btn_SendN
             // 
-            this.btn_sendN.BackColor = System.Drawing.Color.Tan;
-            this.btn_sendN.Location = new System.Drawing.Point(730, 470);
-            this.btn_sendN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_sendN.Name = "btn_sendN";
-            this.btn_sendN.Size = new System.Drawing.Size(138, 34);
-            this.btn_sendN.TabIndex = 29;
-            this.btn_sendN.Text = "发送文件（1：N)";
-            this.btn_sendN.UseVisualStyleBackColor = false;
+            this.btn_SendN.BackColor = System.Drawing.Color.Tan;
+            this.btn_SendN.Location = new System.Drawing.Point(730, 470);
+            this.btn_SendN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_SendN.Name = "btn_SendN";
+            this.btn_SendN.Size = new System.Drawing.Size(138, 34);
+            this.btn_SendN.TabIndex = 29;
+            this.btn_SendN.Text = "发送文件（1：N)";
+            this.btn_SendN.UseVisualStyleBackColor = false;
             // 
             // btn_send1
             // 
@@ -85,6 +85,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "文件传输状态：";
             // 
+            // Message
+            // 
+            this.Message.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Message.Location = new System.Drawing.Point(6, 23);
+            this.Message.Multiline = true;
+            this.Message.Name = "Message";
+            this.Message.Size = new System.Drawing.Size(531, 364);
+            this.Message.TabIndex = 38;
+            // 
             // lb_IPPort
             // 
             this.lb_IPPort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -114,15 +123,6 @@
             this.File.Size = new System.Drawing.Size(422, 25);
             this.File.TabIndex = 37;
             // 
-            // Message
-            // 
-            this.Message.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.Message.Location = new System.Drawing.Point(6, 23);
-            this.Message.Multiline = true;
-            this.Message.Name = "Message";
-            this.Message.Size = new System.Drawing.Size(531, 364);
-            this.Message.TabIndex = 38;
-            // 
             // FileTransfer_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -131,7 +131,7 @@
             this.Controls.Add(this.File);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.btn_sendN);
+            this.Controls.Add(this.btn_SendN);
             this.Controls.Add(this.btn_send1);
             this.Controls.Add(this.btn_select);
             this.Name = "FileTransfer_2";
@@ -146,7 +146,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btn_sendN;
+        private System.Windows.Forms.Button btn_SendN;
         private System.Windows.Forms.Button btn_send1;
         private System.Windows.Forms.Button btn_select;
         private System.Windows.Forms.GroupBox groupBox2;
