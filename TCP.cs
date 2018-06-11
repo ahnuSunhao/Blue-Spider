@@ -1,7 +1,6 @@
 ﻿using Blue_Spider.tools;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -19,8 +18,7 @@ namespace Blue_Spider
         /// 构造函数
         /// </summary>
         /// 
-        
-        public TCP(){  
+        public TCP(){
             socketlisten = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp); 
             IPAddress address = IPAddress.Parse(GetIpAddress());  
             IPEndPoint point = new IPEndPoint(address, 8989);  
@@ -30,7 +28,9 @@ namespace Blue_Spider
             threadlisten.IsBackground = true;     
             threadlisten.Start();
         }
-
+        /// <summary>
+        /// TCP的监听
+        /// </summary>
         private void ListenConnecting()
         {
             Socket connection = null;    
@@ -43,13 +43,11 @@ namespace Blue_Spider
                 }
                 IPAddress clientIP = (connection.RemoteEndPoint as IPEndPoint).Address;//获取客户端的IP和端口号  
                 int clientPort = (connection.RemoteEndPoint as IPEndPoint).Port; 
-                string sendmsg = "连接服务端成功！\r\n" + "本地IP:" + clientIP + "，本地端口" + clientPort.ToString();
-                byte[] arrSendMsg = Encoding.UTF8.GetBytes(sendmsg);
-                connection.Send(arrSendMsg);  
+                //string sendmsg = "连接服务端成功！\r\n" + "本地IP:" + clientIP + "，本地端口" + clientPort.ToString();
+                //byte[] arrSendMsg = Encoding.UTF8.GetBytes(sendmsg);
+                //connection.Send(arrSendMsg);  
                 string remoteEndPoint = connection.RemoteEndPoint.ToString();
-                
                 Until.Log("成功与" + remoteEndPoint + "客户端建立连接！\t\n");
-                 
                 clientConnectionItems.Add(remoteEndPoint, connection);//添加客户端信息 
 
                 IPEndPoint netpoint = connection.RemoteEndPoint as IPEndPoint;    
@@ -73,10 +71,10 @@ namespace Blue_Spider
                 try
                 {
                     int length = socketServer.Receive(arrServerRecMsg);
-                       
                     string strSRecMsg = Encoding.UTF8.GetString(arrServerRecMsg, 0, length);
-                    string str = Console.ReadLine(); ;
-                    socketServer.Send(Encoding.UTF8.GetBytes(str));
+                    IPAddress ip = (socketServer.RemoteEndPoint as IPEndPoint).Address;
+                    Form1.ShowMessageBox(ip,strSRecMsg);
+                    socketServer.Send(Encoding.UTF8.GetBytes(strSRecMsg));
                 }catch (Exception ex){
                     clientConnectionItems.Remove(socketServer.RemoteEndPoint.ToString());
                     socketServer.Close();
@@ -99,10 +97,8 @@ namespace Blue_Spider
         public string GetIpAddress()
         {
             string hostName = Dns.GetHostName();   //获取本机名
-            IPHostEntry localhost = Dns.GetHostByName(hostName);    //方法已过期，可以获取IPv4的地址
-                                                                    //IPHostEntry localhost = Dns.GetHostEntry(hostName);   //获取IPv6地址
+            IPHostEntry localhost = Dns.GetHostByName(hostName);    //方法已过期，可以获取IPv4的地址                                                       //IPHostEntry localhost = Dns.GetHostEntry(hostName);   //获取IPv6地址
             IPAddress localaddr = localhost.AddressList[0];
-
             return localaddr.ToString();
         }
 
