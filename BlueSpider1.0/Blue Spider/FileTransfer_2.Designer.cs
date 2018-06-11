@@ -28,199 +28,117 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label3 = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
-            this.btn_close = new System.Windows.Forms.Button();
-            this.btn_stop = new System.Windows.Forms.Button();
-            this.btn_send = new System.Windows.Forms.Button();
-            this.btn_remove = new System.Windows.Forms.Button();
-            this.btn_folder = new System.Windows.Forms.Button();
-            this.btn_file = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.btn_SendN = new System.Windows.Forms.Button();
+            this.btn_send1 = new System.Windows.Forms.Button();
+            this.btn_select = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.Message = new System.Windows.Forms.TextBox();
+            this.lb_IPPort = new System.Windows.Forms.ListBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.File = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label3
+            // btn_SendN
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 560);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 15);
-            this.label3.TabIndex = 31;
-            this.label3.Text = "进度：";
+            this.btn_SendN.BackColor = System.Drawing.Color.Tan;
+            this.btn_SendN.Location = new System.Drawing.Point(730, 470);
+            this.btn_SendN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_SendN.Name = "btn_SendN";
+            this.btn_SendN.Size = new System.Drawing.Size(138, 34);
+            this.btn_SendN.TabIndex = 29;
+            this.btn_SendN.Text = "发送文件（1：N)";
+            this.btn_SendN.UseVisualStyleBackColor = false;
             // 
-            // progressBar1
+            // btn_send1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(85, 560);
-            this.progressBar1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(406, 24);
-            this.progressBar1.TabIndex = 30;
-            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
+            this.btn_send1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btn_send1.Location = new System.Drawing.Point(573, 470);
+            this.btn_send1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_send1.Name = "btn_send1";
+            this.btn_send1.Size = new System.Drawing.Size(140, 34);
+            this.btn_send1.TabIndex = 28;
+            this.btn_send1.Text = "发送文件（1:1）";
+            this.btn_send1.UseVisualStyleBackColor = false;
             // 
-            // btn_close
+            // btn_select
             // 
-            this.btn_close.BackColor = System.Drawing.Color.Tan;
-            this.btn_close.Location = new System.Drawing.Point(809, 550);
-            this.btn_close.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(82, 34);
-            this.btn_close.TabIndex = 29;
-            this.btn_close.Text = "关闭";
-            this.btn_close.UseVisualStyleBackColor = false;
-            // 
-            // btn_stop
-            // 
-            this.btn_stop.BackColor = System.Drawing.Color.Silver;
-            this.btn_stop.Location = new System.Drawing.Point(669, 550);
-            this.btn_stop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_stop.Name = "btn_stop";
-            this.btn_stop.Size = new System.Drawing.Size(89, 34);
-            this.btn_stop.TabIndex = 28;
-            this.btn_stop.Text = "停止";
-            this.btn_stop.UseVisualStyleBackColor = false;
-            // 
-            // btn_send
-            // 
-            this.btn_send.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_send.Location = new System.Drawing.Point(532, 550);
-            this.btn_send.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_send.Name = "btn_send";
-            this.btn_send.Size = new System.Drawing.Size(84, 34);
-            this.btn_send.TabIndex = 27;
-            this.btn_send.Text = "发送";
-            this.btn_send.UseVisualStyleBackColor = false;
-            // 
-            // btn_remove
-            // 
-            this.btn_remove.BackColor = System.Drawing.Color.Silver;
-            this.btn_remove.Location = new System.Drawing.Point(538, 156);
-            this.btn_remove.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_remove.Name = "btn_remove";
-            this.btn_remove.Size = new System.Drawing.Size(84, 35);
-            this.btn_remove.TabIndex = 26;
-            this.btn_remove.Text = "移除";
-            this.btn_remove.UseVisualStyleBackColor = false;
-            // 
-            // btn_folder
-            // 
-            this.btn_folder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_folder.Location = new System.Drawing.Point(538, 84);
-            this.btn_folder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_folder.Name = "btn_folder";
-            this.btn_folder.Size = new System.Drawing.Size(84, 35);
-            this.btn_folder.TabIndex = 25;
-            this.btn_folder.Text = "文件夹";
-            this.btn_folder.UseVisualStyleBackColor = false;
-            // 
-            // btn_file
-            // 
-            this.btn_file.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_file.Location = new System.Drawing.Point(538, 24);
-            this.btn_file.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_file.Name = "btn_file";
-            this.btn_file.Size = new System.Drawing.Size(84, 35);
-            this.btn_file.TabIndex = 24;
-            this.btn_file.Text = "文件";
-            this.btn_file.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 32);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 15);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "接收文件的学生：";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(27, 51);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(260, 462);
-            this.dataGridView1.TabIndex = 32;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(17, 24);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 23;
-            this.dataGridView2.Size = new System.Drawing.Size(503, 325);
-            this.dataGridView2.TabIndex = 33;
+            this.btn_select.BackColor = System.Drawing.Color.Silver;
+            this.btn_select.Location = new System.Drawing.Point(472, 470);
+            this.btn_select.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_select.Name = "btn_select";
+            this.btn_select.Size = new System.Drawing.Size(84, 34);
+            this.btn_select.TabIndex = 27;
+            this.btn_select.Text = "选择文件";
+            this.btn_select.UseVisualStyleBackColor = false;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.dataGridView2);
-            this.groupBox2.Controls.Add(this.btn_remove);
-            this.groupBox2.Controls.Add(this.btn_folder);
-            this.groupBox2.Controls.Add(this.btn_file);
-            this.groupBox2.Location = new System.Drawing.Point(309, 32);
+            this.groupBox2.Controls.Add(this.Message);
+            this.groupBox2.Location = new System.Drawing.Point(324, 32);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(638, 375);
+            this.groupBox2.Size = new System.Drawing.Size(543, 401);
             this.groupBox2.TabIndex = 34;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "文件传输：选择一个或多个文件";
+            this.groupBox2.Text = "文件传输状态：";
             // 
-            // groupBox3
+            // Message
             // 
-            this.groupBox3.Controls.Add(this.comboBox1);
-            this.groupBox3.Location = new System.Drawing.Point(326, 438);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox3.Size = new System.Drawing.Size(621, 75);
-            this.groupBox3.TabIndex = 35;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "学生机上保存文件的位置";
+            this.Message.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Message.Location = new System.Drawing.Point(6, 23);
+            this.Message.Multiline = true;
+            this.Message.Name = "Message";
+            this.Message.Size = new System.Drawing.Size(531, 364);
+            this.Message.TabIndex = 38;
             // 
-            // comboBox1
+            // lb_IPPort
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(17, 39);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(288, 23);
-            this.comboBox1.TabIndex = 40;
+            this.lb_IPPort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.lb_IPPort.FormattingEnabled = true;
+            this.lb_IPPort.ItemHeight = 15;
+            this.lb_IPPort.Location = new System.Drawing.Point(6, 23);
+            this.lb_IPPort.Name = "lb_IPPort";
+            this.lb_IPPort.Size = new System.Drawing.Size(279, 364);
+            this.lb_IPPort.TabIndex = 34;
             // 
-            // file_transfer_2
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.lb_IPPort);
+            this.groupBox1.Location = new System.Drawing.Point(27, 32);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(291, 401);
+            this.groupBox1.TabIndex = 36;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "接收文件的学生：";
+            // 
+            // File
+            // 
+            this.File.Location = new System.Drawing.Point(27, 470);
+            this.File.Name = "File";
+            this.File.Size = new System.Drawing.Size(422, 25);
+            this.File.TabIndex = 37;
+            // 
+            // FileTransfer_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(989, 631);
-            this.Controls.Add(this.groupBox3);
+            this.ClientSize = new System.Drawing.Size(900, 542);
+            this.Controls.Add(this.File);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.progressBar1);
-            this.Controls.Add(this.btn_close);
-            this.Controls.Add(this.btn_stop);
-            this.Controls.Add(this.btn_send);
-            this.Controls.Add(this.label1);
-            this.Name = "file_transfer_2";
+            this.Controls.Add(this.btn_SendN);
+            this.Controls.Add(this.btn_send1);
+            this.Controls.Add(this.btn_select);
+            this.Name = "FileTransfer_2";
             this.Text = "文件传输_2";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,20 +146,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.Button btn_close;
-        private System.Windows.Forms.Button btn_stop;
-        private System.Windows.Forms.Button btn_send;
-        private System.Windows.Forms.Button btn_remove;
-        private System.Windows.Forms.Button btn_folder;
-        private System.Windows.Forms.Button btn_file;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Button btn_SendN;
+        private System.Windows.Forms.Button btn_send1;
+        private System.Windows.Forms.Button btn_select;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox Message;
+        private System.Windows.Forms.ListBox lb_IPPort;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox File;
 
     }
 }
