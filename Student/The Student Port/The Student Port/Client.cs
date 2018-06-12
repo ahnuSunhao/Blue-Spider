@@ -23,7 +23,7 @@ namespace The_Student_Port
           {
               socketclient = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
               //连接服务器的IP地址  
-              IPAddress address = IPAddress.Parse("192.168.1.106");
+              IPAddress address = IPAddress.Parse("192.168.43.179");
               //将获取的IP地址和端口号绑定在网络节点上  
               IPEndPoint point = new IPEndPoint(address, 8989);
               try

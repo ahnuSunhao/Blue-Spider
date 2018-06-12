@@ -54,9 +54,7 @@ namespace The_Student_Port
                                 FileName = recStr
                             };
 
-                            if (sfDialog.ShowDialog(this) == DialogResult.OK)
-                            {
-                                string savePath = sfDialog.FileName;
+                            string savePath = "D://" + recStr;
                                 int rec = 0;
                                 long recFileLength = 0;
                                 bool firstWrite = true;
@@ -85,7 +83,7 @@ namespace The_Student_Port
                                 string fName = savePath.Substring(savePath.LastIndexOf("\\") + 1);
                                 string fPath = savePath.Substring(0, savePath.LastIndexOf("\\"));
                                 Message.AppendText("ZXY: " + GetTime() + "\r\n你成功接收了文件..." + fName + "\r\n保存路径为：" + fPath + "\r\n");
-                            }
+                            
                         }
                         if (buffer[0] == 2)
                         {
@@ -206,6 +204,11 @@ namespace The_Student_Port
         private void buttonsend_Click(object sender, EventArgs e)
         {
             new System.Threading.Thread(ThreadBction).Start();    //启动线程
+        }
+
+        private void Sumbit_job_Load(object sender, EventArgs e)
+        {
+
         }
 
        

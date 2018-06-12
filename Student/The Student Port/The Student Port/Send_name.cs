@@ -26,7 +26,7 @@ namespace The_Student_Port
         private void initUDP()
         {
             TextBox.CheckForIllegalCrossThreadCalls = false;
-            iep = new IPEndPoint(IPAddress.Parse("192.168.1.106"), 8888);//初始化一个发送广播和指定端口的网络端口实例
+            iep = new IPEndPoint(IPAddress.Parse("192.168.43.179"), 8888);//初始化一个发送广播和指定端口的网络端口实例
             socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);//初始化一个Scoket实习,采用UDP传输
         }
         /// <summary>
@@ -48,6 +48,11 @@ namespace The_Student_Port
                 socket.Close();
                 this.Close();
             }
+        }
+
+        private void Send_name_Load(object sender, EventArgs e)
+        {
+
         }
 
        

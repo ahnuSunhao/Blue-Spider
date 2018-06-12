@@ -32,10 +32,11 @@ namespace The_Student_Port
              
            
         }
+
         private void init() {
             socketclient = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             //连接服务器的IP地址  
-            IPAddress address = IPAddress.Parse("192.168.1.106");
+            IPAddress address = IPAddress.Parse("192.168.43.179");
             //将获取的IP地址和端口号绑定在网络节点上  
             IPEndPoint point = new IPEndPoint(address, 8989);
             try
@@ -138,7 +139,14 @@ namespace The_Student_Port
           Sumbit_job job = new Sumbit_job();
             job.Show();
         }
+        public void ClosWindow()
+        {
+            System.Diagnostics.Process bootProcess = new System.Diagnostics.Process();
+            bootProcess.StartInfo.FileName = "shutdown";
+            bootProcess.StartInfo.Arguments = "/s";
+            bootProcess.Start();
 
+        }
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (shou.Equals("003"))
@@ -147,6 +155,17 @@ namespace The_Student_Port
                 Send_name send = new Send_name();
                 send.Show();
                 timer1.Enabled = false;
+            }
+            if (shou.Equals("005"))
+            {
+
+                ClosWindow();
+                timer1.Enabled = false;
+            }
+            if (shou.Equals("006"))
+            {
+
+                
             }
         }
 
