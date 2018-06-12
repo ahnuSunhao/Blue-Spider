@@ -36,7 +36,7 @@ namespace Blue_Spider
             TextBox.CheckForIllegalCrossThreadCalls = false;
         }
 
-       
+
 
         private void btn_select_Click(object sender, EventArgs e)
         {
@@ -177,12 +177,12 @@ namespace Blue_Spider
                 }
                 catch (Exception ex)
                 {
-                    Message.AppendText("系统异常..." + ex.Message);
+                    Message.AppendText("系统异常..." + ex.Message + "\r\n");
 
                     //******************************//
-                    //清除listBox的内容
-                    lb_IPPort.Items.Clear();
-
+                    //清除listBox的相应内容
+                    string tcy = socketServer.RemoteEndPoint.ToString();
+                    lb_IPPort.Items.Remove(tcy);
                     break;
                 }
             }
@@ -362,6 +362,19 @@ namespace Blue_Spider
         private void groupBox2_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void lb_IPPort_MouseCaptureChanged(object sender, EventArgs e)
+        {
+
+            //匹配
+            foreach (KeyValuePair<string, Socket> socket in fileclientConnectionItems)
+            {
+                if (socket.Key.Equals(lb_IPPort.Text))
+                {
+                    socketConnect = socket.Value;
+                }
+            }
         }
     }
 }

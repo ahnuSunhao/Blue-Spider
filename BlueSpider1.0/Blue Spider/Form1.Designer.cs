@@ -341,6 +341,7 @@
             this.btn_HostScanning.Text = "主机扫描";
             this.btn_HostScanning.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_HostScanning.UseVisualStyleBackColor = true;
+            this.btn_HostScanning.Click += new System.EventHandler(this.btn_HostScanning_Click);
             // 
             // pictureBox1
             // 
@@ -1349,6 +1350,7 @@
             this.tsbtn_Monitoring.Size = new System.Drawing.Size(65, 56);
             this.tsbtn_Monitoring.Text = "屏幕监视";
             this.tsbtn_Monitoring.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsbtn_Monitoring.Click += new System.EventHandler(this.tsbtn_Monitoring_Click);
             // 
             // toolStripButton5
             // 
