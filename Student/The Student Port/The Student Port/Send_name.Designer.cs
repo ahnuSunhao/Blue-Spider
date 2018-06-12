@@ -73,6 +73,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Send_name";
             this.Text = "Send_name";
+            this.Load += new System.EventHandler(this.Send_name_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -46,3 +46,4 @@ C:\Users\sunhao\Desktop\BlueSpider1.0\Blue Spider\obj\x86\Debug\GenerateResource
 C:\Users\sunhao\Desktop\BlueSpider1.0\Blue Spider\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\sunhao\Desktop\BlueSpider1.0\Blue Spider\bin\Debug\Blue Spider.exe
 C:\Users\sunhao\Desktop\BlueSpider1.0\Blue Spider\bin\Debug\Blue Spider.pdb
+C:\Users\sunhao\Desktop\BlueSpider1.0\Blue Spider\obj\x86\Debug\Blue_Spider.screenCapturing.resources

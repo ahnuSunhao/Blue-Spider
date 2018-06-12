@@ -9,3 +9,15 @@ C:\Users\Administrator\Desktop\Student\The Student Port\The Student Port\obj\x86
 C:\Users\Administrator\Desktop\Student\The Student Port\The Student Port\obj\x86\Debug\The Student Port.exe
 C:\Users\Administrator\Desktop\Student\The Student Port\The Student Port\obj\x86\Debug\The Student Port.pdb
 C:\Users\Administrator\Desktop\Student\The Student Port\The Student Port\obj\x86\Debug\The Student Port.csprojResolveAssemblyReference.cache
+C:\Users\sunhao\Desktop\Student\The Student Port\The Student Port\obj\x86\Debug\The Student Port.exe
+C:\Users\sunhao\Desktop\Student\The Student Port\The Student Port\obj\x86\Debug\The Student Port.pdb
+C:\Users\sunhao\Desktop\Student\The Student Port\The Student Port\bin\Debug\The Student Port.exe
+C:\Users\sunhao\Desktop\Student\The Student Port\The Student Port\bin\Debug\The Student Port.pdb
+C:\Users\sunhao\Desktop\Student\The Student Port\The Student Port\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\sunhao\Desktop\Student\The Student Port\The Student Port\obj\x86\Debug\The_Student_Port.Form1.resources
+C:\Users\sunhao\Desktop\Student\The Student Port\The Student Port\obj\x86\Debug\The_Student_Port.Online_news.resources
+C:\Users\sunhao\Desktop\Student\The Student Port\The Student Port\obj\x86\Debug\The_Student_Port.Properties.Resources.resources
+C:\Users\sunhao\Desktop\Student\The Student Port\The Student Port\obj\x86\Debug\The_Student_Port.Send_name.resources
+C:\Users\sunhao\Desktop\Student\The Student Port\The Student Port\obj\x86\Debug\The_Student_Port.Sumbit_job.resources
+C:\Users\sunhao\Desktop\Student\The Student Port\The Student Port\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\sunhao\Desktop\Student\The Student Port\The Student Port\obj\x86\Debug\GenerateResource.write.1.tlog
