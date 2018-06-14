@@ -22,12 +22,23 @@ namespace Blue_Spider
         private StreamWriter sw = null;
         private Thread tcpThread = null;
 
-        private Dictionary<string, Socket> clientConnectionItems ;
+        private IPAddress aimSoc = null;
+
+        private Dictionary<string, Socket> clientConnectionItems;
+
+        private string hostName;
+        private IPHostEntry localhost;
+        private IPAddress localaddr;
+
 
         public screenCapturing(Dictionary<string, Socket> clientConnectionItems)
         {
             InitializeComponent();
             this.clientConnectionItems = clientConnectionItems;
+            hostName = Dns.GetHostName();   //获取本机名
+            localhost = Dns.GetHostByName(hostName);    //方法已过期，可以获取IPv4的地址                                                       //IPHostEntry localhost = Dns.GetHostEntry(hostName);   //获取IPv6地址
+            localaddr = localhost.AddressList[0];
+            textBox_adress.Text = localaddr.ToString();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -37,8 +48,9 @@ namespace Blue_Spider
         public void getRemote()
         {
             //IPAddress ip = IPAddress.Parse(textBox_adress.Text);//192.168.29.1
-            IPAddress ip = IPAddress.Parse("127.0.0.1");
-            tcp = new TcpListener(ip, 8080);
+
+            //IPAddress ip = IPAddress.Parse("127.0.0.1");
+            tcp = new TcpListener(localaddr, 8080);
             tcp.Start();
             socket = tcp.AcceptSocket();
             ns = new NetworkStream(socket);
@@ -55,7 +67,6 @@ namespace Blue_Spider
                         int i = this.socket.Receive(b);//接收 
                         //把byte[]转化成内存流,在把内存流转化成Image, 
                         System.Drawing.Image myimage = System.Drawing.Image.FromStream(new MemoryStream(b));
-
                         this.Size = myimage.Size;
                         showScreen.Image = myimage; //显示 
                     }
@@ -71,13 +82,18 @@ namespace Blue_Spider
 
         private void btn_startMon_Click(object sender, EventArgs e)
         {
+            aimSoc = IPAddress.Parse(textBox_adress.Text);
             foreach (KeyValuePair<string, Socket> socket in clientConnectionItems)
             {
                 Console.WriteLine("IP：{0},Socket：{1}", socket.Key, socket.Value);
-                socket.Value.Send(Encoding.UTF8.GetBytes("006"));
+                if (socket.Key == textBox_adress.Text)
+                {
+                    socket.Value.Send(Encoding.UTF8.GetBytes("006"));
+                    tcpThread = new Thread(new ThreadStart(getRemote));
+                    tcpThread.Start();
+                    break;
+                }
             }
-            tcpThread = new Thread(new ThreadStart(getRemote));
-            tcpThread.Start();
         }
     }
 }

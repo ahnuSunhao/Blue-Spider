@@ -231,7 +231,7 @@ namespace Blue_Spider
 
         private void btn_ShutDown_Click(object sender, EventArgs e)
         {
-
+           // new CloseComputer(clientConnectionItems).ShowDialog(); 
         }
 
     }
