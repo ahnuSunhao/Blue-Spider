@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CheckHomework.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckHomework.Designer.cs">
+      <DependentUpon>CheckHomework.cs</DependentUpon>
+    </Compile>
     <Compile Include="ElectronicName.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,12 +63,6 @@
     </Compile>
     <Compile Include="OnlineDiscuss.Designer.cs">
       <DependentUpon>OnlineDiscuss.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FileTransfer_1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FileTransfer_1.Designer.cs">
-      <DependentUpon>FileTransfer_1.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -78,14 +78,22 @@
     <Compile Include="FileTransfer_2.Designer.cs">
       <DependentUpon>FileTransfer_2.cs</DependentUpon>
     </Compile>
+    <Compile Include="screenCapturing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screenCapturing.Designer.cs">
+      <DependentUpon>screenCapturing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TCP.cs" />
+    <Compile Include="tools\Until.cs" />
+    <EmbeddedResource Include="CheckHomework.resx">
+      <DependentUpon>CheckHomework.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ElectronicName.resx">
       <DependentUpon>ElectronicName.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OnlineDiscuss.resx">
       <DependentUpon>OnlineDiscuss.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FileTransfer_1.resx">
-      <DependentUpon>FileTransfer_1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -102,6 +110,9 @@
     </Compile>
     <EmbeddedResource Include="FileTransfer_2.resx">
       <DependentUpon>FileTransfer_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screenCapturing.resx">
+      <DependentUpon>screenCapturing.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -152,6 +163,7 @@
   <ItemGroup>
     <None Include="Resources\水.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -9,16 +9,11 @@ using System.Windows.Forms;
 
 namespace Blue_Spider
 {
-    public partial class FileTransfer_1 : Form
+    public partial class CheckHomework : Form
     {
-        public FileTransfer_1()
+        public CheckHomework()
         {
             InitializeComponent();
-        }
-
-        private void btn_continue_Click(object sender, EventArgs e)
-        {
-            new FileTransfer_2().ShowDialog();
         }
     }
 }
