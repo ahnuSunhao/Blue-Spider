@@ -39,46 +39,52 @@
             // 
             this.showScreen.Dock = System.Windows.Forms.DockStyle.Fill;
             this.showScreen.Location = new System.Drawing.Point(0, 0);
+            this.showScreen.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.showScreen.Name = "showScreen";
-            this.showScreen.Size = new System.Drawing.Size(530, 476);
+            this.showScreen.Size = new System.Drawing.Size(707, 595);
             this.showScreen.TabIndex = 0;
             this.showScreen.TabStop = false;
             // 
             // btn_startMon
             // 
-            this.btn_startMon.Location = new System.Drawing.Point(288, 21);
+            this.btn_startMon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btn_startMon.Location = new System.Drawing.Point(384, 26);
+            this.btn_startMon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_startMon.Name = "btn_startMon";
-            this.btn_startMon.Size = new System.Drawing.Size(75, 23);
+            this.btn_startMon.Size = new System.Drawing.Size(100, 29);
             this.btn_startMon.TabIndex = 1;
             this.btn_startMon.Text = "监视";
-            this.btn_startMon.UseVisualStyleBackColor = true;
+            this.btn_startMon.UseVisualStyleBackColor = false;
             this.btn_startMon.Click += new System.EventHandler(this.btn_startMon_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 25);
+            this.label1.Location = new System.Drawing.Point(32, 31);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 12);
+            this.label1.Size = new System.Drawing.Size(45, 15);
             this.label1.TabIndex = 2;
             this.label1.Text = "地址:";
             // 
             // textBox_adress
             // 
-            this.textBox_adress.Location = new System.Drawing.Point(66, 21);
+            this.textBox_adress.Location = new System.Drawing.Point(88, 26);
+            this.textBox_adress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox_adress.Name = "textBox_adress";
-            this.textBox_adress.Size = new System.Drawing.Size(202, 21);
+            this.textBox_adress.Size = new System.Drawing.Size(268, 25);
             this.textBox_adress.TabIndex = 3;
             // 
             // screenCapturing
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(530, 476);
+            this.ClientSize = new System.Drawing.Size(707, 595);
             this.Controls.Add(this.textBox_adress);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_startMon);
             this.Controls.Add(this.showScreen);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "screenCapturing";
             this.Text = "screenCapturing";
             ((System.ComponentModel.ISupportInitialize)(this.showScreen)).EndInit();

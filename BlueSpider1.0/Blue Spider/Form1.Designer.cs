@@ -152,7 +152,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -252,18 +252,17 @@
             this.splitContainer1.Panel2.Controls.Add(this.labelst1_1);
             this.splitContainer1.Panel2.Controls.Add(this.labeltea);
             this.splitContainer1.Panel2.Controls.Add(this.toolStrip1);
-            this.splitContainer1.Size = new System.Drawing.Size(890, 705);
-            this.splitContainer1.SplitterDistance = 190;
-            this.splitContainer1.SplitterWidth = 3;
+            this.splitContainer1.Size = new System.Drawing.Size(1187, 881);
+            this.splitContainer1.SplitterDistance = 253;
             this.splitContainer1.TabIndex = 1;
             // 
             // btn_quit
             // 
             this.btn_quit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_quit.Location = new System.Drawing.Point(29, 617);
-            this.btn_quit.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_quit.Location = new System.Drawing.Point(39, 771);
+            this.btn_quit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_quit.Name = "btn_quit";
-            this.btn_quit.Size = new System.Drawing.Size(146, 44);
+            this.btn_quit.Size = new System.Drawing.Size(195, 55);
             this.btn_quit.TabIndex = 8;
             this.btn_quit.Text = "退出程序";
             this.btn_quit.UseVisualStyleBackColor = false;
@@ -272,10 +271,10 @@
             // btn_finish
             // 
             this.btn_finish.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.btn_finish.Location = new System.Drawing.Point(29, 524);
-            this.btn_finish.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_finish.Location = new System.Drawing.Point(39, 655);
+            this.btn_finish.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_finish.Name = "btn_finish";
-            this.btn_finish.Size = new System.Drawing.Size(146, 42);
+            this.btn_finish.Size = new System.Drawing.Size(195, 52);
             this.btn_finish.TabIndex = 1;
             this.btn_finish.Text = "结束控制";
             this.btn_finish.UseVisualStyleBackColor = false;
@@ -286,20 +285,19 @@
             this.label1.BackColor = System.Drawing.Color.RoyalBlue;
             this.label1.Font = new System.Drawing.Font("隶书", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(52, 91);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(69, 114);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 22);
+            this.label1.Size = new System.Drawing.Size(128, 28);
             this.label1.TabIndex = 7;
             this.label1.Text = "其他功能";
             // 
             // btn_FileTransfer
             // 
             this.btn_FileTransfer.BackgroundImage = global::Blue_Spider.Properties.Resources.bt4;
-            this.btn_FileTransfer.Location = new System.Drawing.Point(29, 420);
-            this.btn_FileTransfer.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_FileTransfer.Location = new System.Drawing.Point(39, 525);
+            this.btn_FileTransfer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_FileTransfer.Name = "btn_FileTransfer";
-            this.btn_FileTransfer.Size = new System.Drawing.Size(146, 46);
+            this.btn_FileTransfer.Size = new System.Drawing.Size(195, 58);
             this.btn_FileTransfer.TabIndex = 4;
             this.btn_FileTransfer.Text = "文件传输";
             this.btn_FileTransfer.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -309,34 +307,36 @@
             // btn_JobView
             // 
             this.btn_JobView.BackgroundImage = global::Blue_Spider.Properties.Resources.bt3;
-            this.btn_JobView.Location = new System.Drawing.Point(29, 324);
-            this.btn_JobView.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_JobView.Location = new System.Drawing.Point(39, 405);
+            this.btn_JobView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_JobView.Name = "btn_JobView";
-            this.btn_JobView.Size = new System.Drawing.Size(146, 46);
+            this.btn_JobView.Size = new System.Drawing.Size(195, 58);
             this.btn_JobView.TabIndex = 3;
             this.btn_JobView.Text = "作业查看";
             this.btn_JobView.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_JobView.UseVisualStyleBackColor = true;
+            this.btn_JobView.Click += new System.EventHandler(this.btn_JobView_Click);
             // 
             // btn_ShutDown
             // 
             this.btn_ShutDown.BackgroundImage = global::Blue_Spider.Properties.Resources.bt2;
-            this.btn_ShutDown.Location = new System.Drawing.Point(29, 239);
-            this.btn_ShutDown.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_ShutDown.Location = new System.Drawing.Point(39, 299);
+            this.btn_ShutDown.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_ShutDown.Name = "btn_ShutDown";
-            this.btn_ShutDown.Size = new System.Drawing.Size(146, 45);
+            this.btn_ShutDown.Size = new System.Drawing.Size(195, 56);
             this.btn_ShutDown.TabIndex = 2;
             this.btn_ShutDown.Text = "远程关机";
             this.btn_ShutDown.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_ShutDown.UseVisualStyleBackColor = true;
+            this.btn_ShutDown.Click += new System.EventHandler(this.btn_ShutDown_Click);
             // 
             // btn_HostScanning
             // 
             this.btn_HostScanning.BackgroundImage = global::Blue_Spider.Properties.Resources.bt1;
-            this.btn_HostScanning.Location = new System.Drawing.Point(29, 151);
-            this.btn_HostScanning.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_HostScanning.Location = new System.Drawing.Point(39, 189);
+            this.btn_HostScanning.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_HostScanning.Name = "btn_HostScanning";
-            this.btn_HostScanning.Size = new System.Drawing.Size(146, 44);
+            this.btn_HostScanning.Size = new System.Drawing.Size(195, 55);
             this.btn_HostScanning.TabIndex = 1;
             this.btn_HostScanning.Text = "主机扫描";
             this.btn_HostScanning.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -346,8 +346,8 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Blue_Spider.Properties.Resources.蓝蜘蛛1;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 3);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(186, 70);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -358,9 +358,10 @@
             // 
             this.labelst10_1.Image = global::Blue_Spider.Properties.Resources.学生;
             this.labelst10_1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst10_1.Location = new System.Drawing.Point(554, 621);
+            this.labelst10_1.Location = new System.Drawing.Point(739, 776);
+            this.labelst10_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst10_1.Name = "labelst10_1";
-            this.labelst10_1.Size = new System.Drawing.Size(33, 50);
+            this.labelst10_1.Size = new System.Drawing.Size(44, 62);
             this.labelst10_1.TabIndex = 84;
             this.labelst10_1.Text = "10_1";
             this.labelst10_1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -369,9 +370,10 @@
             // 
             this.labelst10_2.Image = global::Blue_Spider.Properties.Resources.学生;
             this.labelst10_2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst10_2.Location = new System.Drawing.Point(453, 621);
+            this.labelst10_2.Location = new System.Drawing.Point(604, 776);
+            this.labelst10_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst10_2.Name = "labelst10_2";
-            this.labelst10_2.Size = new System.Drawing.Size(33, 50);
+            this.labelst10_2.Size = new System.Drawing.Size(44, 62);
             this.labelst10_2.TabIndex = 83;
             this.labelst10_2.Text = "10_2";
             this.labelst10_2.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -380,9 +382,10 @@
             // 
             this.labelst10_3.Image = global::Blue_Spider.Properties.Resources.学生;
             this.labelst10_3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst10_3.Location = new System.Drawing.Point(353, 621);
+            this.labelst10_3.Location = new System.Drawing.Point(471, 776);
+            this.labelst10_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst10_3.Name = "labelst10_3";
-            this.labelst10_3.Size = new System.Drawing.Size(33, 50);
+            this.labelst10_3.Size = new System.Drawing.Size(44, 62);
             this.labelst10_3.TabIndex = 82;
             this.labelst10_3.Text = "10_3";
             this.labelst10_3.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -391,9 +394,10 @@
             // 
             this.labelst10_4.Image = global::Blue_Spider.Properties.Resources.学生;
             this.labelst10_4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst10_4.Location = new System.Drawing.Point(254, 621);
+            this.labelst10_4.Location = new System.Drawing.Point(339, 776);
+            this.labelst10_4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst10_4.Name = "labelst10_4";
-            this.labelst10_4.Size = new System.Drawing.Size(33, 50);
+            this.labelst10_4.Size = new System.Drawing.Size(44, 62);
             this.labelst10_4.TabIndex = 81;
             this.labelst10_4.Text = "10_4";
             this.labelst10_4.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -402,9 +406,10 @@
             // 
             this.labelst10_5.Image = global::Blue_Spider.Properties.Resources.学生;
             this.labelst10_5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst10_5.Location = new System.Drawing.Point(153, 621);
+            this.labelst10_5.Location = new System.Drawing.Point(204, 776);
+            this.labelst10_5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst10_5.Name = "labelst10_5";
-            this.labelst10_5.Size = new System.Drawing.Size(33, 50);
+            this.labelst10_5.Size = new System.Drawing.Size(44, 62);
             this.labelst10_5.TabIndex = 80;
             this.labelst10_5.Text = "10_5";
             this.labelst10_5.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -413,9 +418,10 @@
             // 
             this.labelst9_1.Image = global::Blue_Spider.Properties.Resources.学生;
             this.labelst9_1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst9_1.Location = new System.Drawing.Point(554, 562);
+            this.labelst9_1.Location = new System.Drawing.Point(739, 702);
+            this.labelst9_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst9_1.Name = "labelst9_1";
-            this.labelst9_1.Size = new System.Drawing.Size(33, 50);
+            this.labelst9_1.Size = new System.Drawing.Size(44, 62);
             this.labelst9_1.TabIndex = 79;
             this.labelst9_1.Text = "9_1";
             this.labelst9_1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -424,9 +430,10 @@
             // 
             this.labelst9_2.Image = global::Blue_Spider.Properties.Resources.学生;
             this.labelst9_2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst9_2.Location = new System.Drawing.Point(453, 562);
+            this.labelst9_2.Location = new System.Drawing.Point(604, 702);
+            this.labelst9_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst9_2.Name = "labelst9_2";
-            this.labelst9_2.Size = new System.Drawing.Size(33, 50);
+            this.labelst9_2.Size = new System.Drawing.Size(44, 62);
             this.labelst9_2.TabIndex = 78;
             this.labelst9_2.Text = "9_2";
             this.labelst9_2.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -435,9 +442,10 @@
             // 
             this.labelst9_3.Image = global::Blue_Spider.Properties.Resources.学生;
             this.labelst9_3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst9_3.Location = new System.Drawing.Point(353, 562);
+            this.labelst9_3.Location = new System.Drawing.Point(471, 702);
+            this.labelst9_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst9_3.Name = "labelst9_3";
-            this.labelst9_3.Size = new System.Drawing.Size(33, 50);
+            this.labelst9_3.Size = new System.Drawing.Size(44, 62);
             this.labelst9_3.TabIndex = 77;
             this.labelst9_3.Text = "9_3";
             this.labelst9_3.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -446,9 +454,10 @@
             // 
             this.labelst9_4.Image = global::Blue_Spider.Properties.Resources.学生;
             this.labelst9_4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst9_4.Location = new System.Drawing.Point(254, 562);
+            this.labelst9_4.Location = new System.Drawing.Point(339, 702);
+            this.labelst9_4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst9_4.Name = "labelst9_4";
-            this.labelst9_4.Size = new System.Drawing.Size(33, 50);
+            this.labelst9_4.Size = new System.Drawing.Size(44, 62);
             this.labelst9_4.TabIndex = 76;
             this.labelst9_4.Text = "9_4";
             this.labelst9_4.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -457,9 +466,10 @@
             // 
             this.labelst9_5.Image = global::Blue_Spider.Properties.Resources.学生;
             this.labelst9_5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst9_5.Location = new System.Drawing.Point(153, 562);
+            this.labelst9_5.Location = new System.Drawing.Point(204, 702);
+            this.labelst9_5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst9_5.Name = "labelst9_5";
-            this.labelst9_5.Size = new System.Drawing.Size(33, 50);
+            this.labelst9_5.Size = new System.Drawing.Size(44, 62);
             this.labelst9_5.TabIndex = 75;
             this.labelst9_5.Text = "9_5";
             this.labelst9_5.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -468,9 +478,10 @@
             // 
             this.labelst8_1.Image = global::Blue_Spider.Properties.Resources.学生;
             this.labelst8_1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst8_1.Location = new System.Drawing.Point(554, 502);
+            this.labelst8_1.Location = new System.Drawing.Point(739, 628);
+            this.labelst8_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst8_1.Name = "labelst8_1";
-            this.labelst8_1.Size = new System.Drawing.Size(33, 50);
+            this.labelst8_1.Size = new System.Drawing.Size(44, 62);
             this.labelst8_1.TabIndex = 74;
             this.labelst8_1.Text = "8_1";
             this.labelst8_1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -479,9 +490,10 @@
             // 
             this.labelst8_2.Image = global::Blue_Spider.Properties.Resources.学生;
             this.labelst8_2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst8_2.Location = new System.Drawing.Point(453, 502);
+            this.labelst8_2.Location = new System.Drawing.Point(604, 628);
+            this.labelst8_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst8_2.Name = "labelst8_2";
-            this.labelst8_2.Size = new System.Drawing.Size(33, 50);
+            this.labelst8_2.Size = new System.Drawing.Size(44, 62);
             this.labelst8_2.TabIndex = 73;
             this.labelst8_2.Text = "8_2";
             this.labelst8_2.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -490,9 +502,10 @@
             // 
             this.labelst8_3.Image = global::Blue_Spider.Properties.Resources.学生;
             this.labelst8_3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst8_3.Location = new System.Drawing.Point(353, 502);
+            this.labelst8_3.Location = new System.Drawing.Point(471, 628);
+            this.labelst8_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst8_3.Name = "labelst8_3";
-            this.labelst8_3.Size = new System.Drawing.Size(33, 50);
+            this.labelst8_3.Size = new System.Drawing.Size(44, 62);
             this.labelst8_3.TabIndex = 72;
             this.labelst8_3.Text = "8_3";
             this.labelst8_3.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -501,9 +514,10 @@
             // 
             this.labelst8_4.Image = global::Blue_Spider.Properties.Resources.学生;
             this.labelst8_4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst8_4.Location = new System.Drawing.Point(254, 502);
+            this.labelst8_4.Location = new System.Drawing.Point(339, 628);
+            this.labelst8_4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst8_4.Name = "labelst8_4";
-            this.labelst8_4.Size = new System.Drawing.Size(33, 50);
+            this.labelst8_4.Size = new System.Drawing.Size(44, 62);
             this.labelst8_4.TabIndex = 71;
             this.labelst8_4.Text = "8_4";
             this.labelst8_4.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -512,9 +526,10 @@
             // 
             this.labelst8_5.Image = global::Blue_Spider.Properties.Resources.学生;
             this.labelst8_5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst8_5.Location = new System.Drawing.Point(153, 502);
+            this.labelst8_5.Location = new System.Drawing.Point(204, 628);
+            this.labelst8_5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst8_5.Name = "labelst8_5";
-            this.labelst8_5.Size = new System.Drawing.Size(33, 50);
+            this.labelst8_5.Size = new System.Drawing.Size(44, 62);
             this.labelst8_5.TabIndex = 70;
             this.labelst8_5.Text = "8_5";
             this.labelst8_5.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -523,9 +538,10 @@
             // 
             this.labelst7_5.Image = ((System.Drawing.Image)(resources.GetObject("labelst7_5.Image")));
             this.labelst7_5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst7_5.Location = new System.Drawing.Point(153, 440);
+            this.labelst7_5.Location = new System.Drawing.Point(204, 550);
+            this.labelst7_5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst7_5.Name = "labelst7_5";
-            this.labelst7_5.Size = new System.Drawing.Size(33, 50);
+            this.labelst7_5.Size = new System.Drawing.Size(44, 62);
             this.labelst7_5.TabIndex = 69;
             this.labelst7_5.Text = "7_5";
             this.labelst7_5.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -534,9 +550,10 @@
             // 
             this.labelst7_1.Image = global::Blue_Spider.Properties.Resources.学生;
             this.labelst7_1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst7_1.Location = new System.Drawing.Point(554, 440);
+            this.labelst7_1.Location = new System.Drawing.Point(739, 550);
+            this.labelst7_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst7_1.Name = "labelst7_1";
-            this.labelst7_1.Size = new System.Drawing.Size(33, 50);
+            this.labelst7_1.Size = new System.Drawing.Size(44, 62);
             this.labelst7_1.TabIndex = 65;
             this.labelst7_1.Text = "7_1";
             this.labelst7_1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -545,9 +562,10 @@
             // 
             this.labelst7_2.Image = global::Blue_Spider.Properties.Resources.学生;
             this.labelst7_2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst7_2.Location = new System.Drawing.Point(453, 440);
+            this.labelst7_2.Location = new System.Drawing.Point(604, 550);
+            this.labelst7_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst7_2.Name = "labelst7_2";
-            this.labelst7_2.Size = new System.Drawing.Size(33, 50);
+            this.labelst7_2.Size = new System.Drawing.Size(44, 62);
             this.labelst7_2.TabIndex = 64;
             this.labelst7_2.Text = "7_2";
             this.labelst7_2.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -556,9 +574,10 @@
             // 
             this.labelst7_3.Image = ((System.Drawing.Image)(resources.GetObject("labelst7_3.Image")));
             this.labelst7_3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst7_3.Location = new System.Drawing.Point(353, 440);
+            this.labelst7_3.Location = new System.Drawing.Point(471, 550);
+            this.labelst7_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst7_3.Name = "labelst7_3";
-            this.labelst7_3.Size = new System.Drawing.Size(33, 50);
+            this.labelst7_3.Size = new System.Drawing.Size(44, 62);
             this.labelst7_3.TabIndex = 63;
             this.labelst7_3.Text = "7_3";
             this.labelst7_3.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -567,9 +586,10 @@
             // 
             this.labelst7_4.Image = ((System.Drawing.Image)(resources.GetObject("labelst7_4.Image")));
             this.labelst7_4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst7_4.Location = new System.Drawing.Point(254, 440);
+            this.labelst7_4.Location = new System.Drawing.Point(339, 550);
+            this.labelst7_4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst7_4.Name = "labelst7_4";
-            this.labelst7_4.Size = new System.Drawing.Size(33, 50);
+            this.labelst7_4.Size = new System.Drawing.Size(44, 62);
             this.labelst7_4.TabIndex = 62;
             this.labelst7_4.Text = "7_4";
             this.labelst7_4.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -578,9 +598,10 @@
             // 
             this.labelst4_5.Image = ((System.Drawing.Image)(resources.GetObject("labelst4_5.Image")));
             this.labelst4_5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst4_5.Location = new System.Drawing.Point(353, 258);
+            this.labelst4_5.Location = new System.Drawing.Point(471, 322);
+            this.labelst4_5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst4_5.Name = "labelst4_5";
-            this.labelst4_5.Size = new System.Drawing.Size(33, 50);
+            this.labelst4_5.Size = new System.Drawing.Size(44, 62);
             this.labelst4_5.TabIndex = 61;
             this.labelst4_5.Text = "4_5";
             this.labelst4_5.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -589,9 +610,10 @@
             // 
             this.labelst5_2.Image = ((System.Drawing.Image)(resources.GetObject("labelst5_2.Image")));
             this.labelst5_2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst5_2.Location = new System.Drawing.Point(503, 319);
+            this.labelst5_2.Location = new System.Drawing.Point(671, 399);
+            this.labelst5_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst5_2.Name = "labelst5_2";
-            this.labelst5_2.Size = new System.Drawing.Size(33, 50);
+            this.labelst5_2.Size = new System.Drawing.Size(44, 62);
             this.labelst5_2.TabIndex = 60;
             this.labelst5_2.Text = "5_2";
             this.labelst5_2.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -600,9 +622,10 @@
             // 
             this.labelst5_3.Image = ((System.Drawing.Image)(resources.GetObject("labelst5_3.Image")));
             this.labelst5_3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst5_3.Location = new System.Drawing.Point(453, 319);
+            this.labelst5_3.Location = new System.Drawing.Point(604, 399);
+            this.labelst5_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst5_3.Name = "labelst5_3";
-            this.labelst5_3.Size = new System.Drawing.Size(33, 50);
+            this.labelst5_3.Size = new System.Drawing.Size(44, 62);
             this.labelst5_3.TabIndex = 59;
             this.labelst5_3.Text = "5_3";
             this.labelst5_3.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -611,9 +634,10 @@
             // 
             this.labelst5_4.Image = ((System.Drawing.Image)(resources.GetObject("labelst5_4.Image")));
             this.labelst5_4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst5_4.Location = new System.Drawing.Point(404, 319);
+            this.labelst5_4.Location = new System.Drawing.Point(539, 399);
+            this.labelst5_4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst5_4.Name = "labelst5_4";
-            this.labelst5_4.Size = new System.Drawing.Size(33, 50);
+            this.labelst5_4.Size = new System.Drawing.Size(44, 62);
             this.labelst5_4.TabIndex = 58;
             this.labelst5_4.Text = "5_4";
             this.labelst5_4.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -622,9 +646,10 @@
             // 
             this.labelst5_5.Image = ((System.Drawing.Image)(resources.GetObject("labelst5_5.Image")));
             this.labelst5_5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst5_5.Location = new System.Drawing.Point(353, 319);
+            this.labelst5_5.Location = new System.Drawing.Point(471, 399);
+            this.labelst5_5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst5_5.Name = "labelst5_5";
-            this.labelst5_5.Size = new System.Drawing.Size(33, 50);
+            this.labelst5_5.Size = new System.Drawing.Size(44, 62);
             this.labelst5_5.TabIndex = 57;
             this.labelst5_5.Text = "5_5";
             this.labelst5_5.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -633,9 +658,10 @@
             // 
             this.labelst5_6.Image = ((System.Drawing.Image)(resources.GetObject("labelst5_6.Image")));
             this.labelst5_6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst5_6.Location = new System.Drawing.Point(303, 319);
+            this.labelst5_6.Location = new System.Drawing.Point(404, 399);
+            this.labelst5_6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst5_6.Name = "labelst5_6";
-            this.labelst5_6.Size = new System.Drawing.Size(33, 50);
+            this.labelst5_6.Size = new System.Drawing.Size(44, 62);
             this.labelst5_6.TabIndex = 56;
             this.labelst5_6.Text = "5_6";
             this.labelst5_6.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -644,9 +670,10 @@
             // 
             this.labelst5_7.Image = ((System.Drawing.Image)(resources.GetObject("labelst5_7.Image")));
             this.labelst5_7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst5_7.Location = new System.Drawing.Point(254, 319);
+            this.labelst5_7.Location = new System.Drawing.Point(339, 399);
+            this.labelst5_7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst5_7.Name = "labelst5_7";
-            this.labelst5_7.Size = new System.Drawing.Size(33, 50);
+            this.labelst5_7.Size = new System.Drawing.Size(44, 62);
             this.labelst5_7.TabIndex = 55;
             this.labelst5_7.Text = "5_7";
             this.labelst5_7.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -655,9 +682,10 @@
             // 
             this.labelst5_8.Image = ((System.Drawing.Image)(resources.GetObject("labelst5_8.Image")));
             this.labelst5_8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst5_8.Location = new System.Drawing.Point(203, 319);
+            this.labelst5_8.Location = new System.Drawing.Point(271, 399);
+            this.labelst5_8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst5_8.Name = "labelst5_8";
-            this.labelst5_8.Size = new System.Drawing.Size(33, 50);
+            this.labelst5_8.Size = new System.Drawing.Size(44, 62);
             this.labelst5_8.TabIndex = 54;
             this.labelst5_8.Text = "5_8";
             this.labelst5_8.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -666,9 +694,10 @@
             // 
             this.labelst5_9.Image = ((System.Drawing.Image)(resources.GetObject("labelst5_9.Image")));
             this.labelst5_9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst5_9.Location = new System.Drawing.Point(153, 319);
+            this.labelst5_9.Location = new System.Drawing.Point(204, 399);
+            this.labelst5_9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst5_9.Name = "labelst5_9";
-            this.labelst5_9.Size = new System.Drawing.Size(33, 50);
+            this.labelst5_9.Size = new System.Drawing.Size(44, 62);
             this.labelst5_9.TabIndex = 53;
             this.labelst5_9.Text = "5_9";
             this.labelst5_9.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -677,9 +706,10 @@
             // 
             this.labelst5_10.Image = ((System.Drawing.Image)(resources.GetObject("labelst5_10.Image")));
             this.labelst5_10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst5_10.Location = new System.Drawing.Point(104, 319);
+            this.labelst5_10.Location = new System.Drawing.Point(139, 399);
+            this.labelst5_10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst5_10.Name = "labelst5_10";
-            this.labelst5_10.Size = new System.Drawing.Size(33, 50);
+            this.labelst5_10.Size = new System.Drawing.Size(44, 62);
             this.labelst5_10.TabIndex = 52;
             this.labelst5_10.Text = "5_10";
             this.labelst5_10.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -688,9 +718,10 @@
             // 
             this.labelst6_1.Image = ((System.Drawing.Image)(resources.GetObject("labelst6_1.Image")));
             this.labelst6_1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst6_1.Location = new System.Drawing.Point(554, 379);
+            this.labelst6_1.Location = new System.Drawing.Point(739, 474);
+            this.labelst6_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst6_1.Name = "labelst6_1";
-            this.labelst6_1.Size = new System.Drawing.Size(33, 50);
+            this.labelst6_1.Size = new System.Drawing.Size(44, 62);
             this.labelst6_1.TabIndex = 51;
             this.labelst6_1.Text = "6_1";
             this.labelst6_1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -699,9 +730,10 @@
             // 
             this.labelst6_2.Image = ((System.Drawing.Image)(resources.GetObject("labelst6_2.Image")));
             this.labelst6_2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst6_2.Location = new System.Drawing.Point(503, 379);
+            this.labelst6_2.Location = new System.Drawing.Point(671, 474);
+            this.labelst6_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst6_2.Name = "labelst6_2";
-            this.labelst6_2.Size = new System.Drawing.Size(33, 50);
+            this.labelst6_2.Size = new System.Drawing.Size(44, 62);
             this.labelst6_2.TabIndex = 50;
             this.labelst6_2.Text = "6_2";
             this.labelst6_2.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -710,9 +742,10 @@
             // 
             this.labelst6_3.Image = ((System.Drawing.Image)(resources.GetObject("labelst6_3.Image")));
             this.labelst6_3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst6_3.Location = new System.Drawing.Point(453, 379);
+            this.labelst6_3.Location = new System.Drawing.Point(604, 474);
+            this.labelst6_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst6_3.Name = "labelst6_3";
-            this.labelst6_3.Size = new System.Drawing.Size(33, 50);
+            this.labelst6_3.Size = new System.Drawing.Size(44, 62);
             this.labelst6_3.TabIndex = 49;
             this.labelst6_3.Text = "6_3";
             this.labelst6_3.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -721,9 +754,10 @@
             // 
             this.labelst6_4.Image = ((System.Drawing.Image)(resources.GetObject("labelst6_4.Image")));
             this.labelst6_4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst6_4.Location = new System.Drawing.Point(404, 379);
+            this.labelst6_4.Location = new System.Drawing.Point(539, 474);
+            this.labelst6_4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst6_4.Name = "labelst6_4";
-            this.labelst6_4.Size = new System.Drawing.Size(33, 50);
+            this.labelst6_4.Size = new System.Drawing.Size(44, 62);
             this.labelst6_4.TabIndex = 48;
             this.labelst6_4.Text = "6_4";
             this.labelst6_4.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -732,9 +766,10 @@
             // 
             this.labelst6_5.Image = ((System.Drawing.Image)(resources.GetObject("labelst6_5.Image")));
             this.labelst6_5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst6_5.Location = new System.Drawing.Point(353, 379);
+            this.labelst6_5.Location = new System.Drawing.Point(471, 474);
+            this.labelst6_5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst6_5.Name = "labelst6_5";
-            this.labelst6_5.Size = new System.Drawing.Size(33, 50);
+            this.labelst6_5.Size = new System.Drawing.Size(44, 62);
             this.labelst6_5.TabIndex = 47;
             this.labelst6_5.Text = "6_5";
             this.labelst6_5.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -743,9 +778,10 @@
             // 
             this.labelst6_6.Image = ((System.Drawing.Image)(resources.GetObject("labelst6_6.Image")));
             this.labelst6_6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst6_6.Location = new System.Drawing.Point(303, 379);
+            this.labelst6_6.Location = new System.Drawing.Point(404, 474);
+            this.labelst6_6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst6_6.Name = "labelst6_6";
-            this.labelst6_6.Size = new System.Drawing.Size(33, 50);
+            this.labelst6_6.Size = new System.Drawing.Size(44, 62);
             this.labelst6_6.TabIndex = 46;
             this.labelst6_6.Text = "6_6";
             this.labelst6_6.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -754,9 +790,10 @@
             // 
             this.labelst6_7.Image = ((System.Drawing.Image)(resources.GetObject("labelst6_7.Image")));
             this.labelst6_7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst6_7.Location = new System.Drawing.Point(254, 379);
+            this.labelst6_7.Location = new System.Drawing.Point(339, 474);
+            this.labelst6_7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst6_7.Name = "labelst6_7";
-            this.labelst6_7.Size = new System.Drawing.Size(33, 50);
+            this.labelst6_7.Size = new System.Drawing.Size(44, 62);
             this.labelst6_7.TabIndex = 45;
             this.labelst6_7.Text = "6_7";
             this.labelst6_7.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -765,9 +802,10 @@
             // 
             this.labelst6_8.Image = ((System.Drawing.Image)(resources.GetObject("labelst6_8.Image")));
             this.labelst6_8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst6_8.Location = new System.Drawing.Point(203, 379);
+            this.labelst6_8.Location = new System.Drawing.Point(271, 474);
+            this.labelst6_8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst6_8.Name = "labelst6_8";
-            this.labelst6_8.Size = new System.Drawing.Size(33, 50);
+            this.labelst6_8.Size = new System.Drawing.Size(44, 62);
             this.labelst6_8.TabIndex = 44;
             this.labelst6_8.Text = "6_8";
             this.labelst6_8.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -776,9 +814,10 @@
             // 
             this.labelst6_9.Image = ((System.Drawing.Image)(resources.GetObject("labelst6_9.Image")));
             this.labelst6_9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst6_9.Location = new System.Drawing.Point(153, 379);
+            this.labelst6_9.Location = new System.Drawing.Point(204, 474);
+            this.labelst6_9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst6_9.Name = "labelst6_9";
-            this.labelst6_9.Size = new System.Drawing.Size(33, 50);
+            this.labelst6_9.Size = new System.Drawing.Size(44, 62);
             this.labelst6_9.TabIndex = 43;
             this.labelst6_9.Text = "6_9";
             this.labelst6_9.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -787,9 +826,10 @@
             // 
             this.label6_10.Image = ((System.Drawing.Image)(resources.GetObject("label6_10.Image")));
             this.label6_10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label6_10.Location = new System.Drawing.Point(104, 379);
+            this.label6_10.Location = new System.Drawing.Point(139, 474);
+            this.label6_10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6_10.Name = "label6_10";
-            this.label6_10.Size = new System.Drawing.Size(33, 50);
+            this.label6_10.Size = new System.Drawing.Size(44, 62);
             this.label6_10.TabIndex = 42;
             this.label6_10.Text = "6_10";
             this.label6_10.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -798,9 +838,10 @@
             // 
             this.labelst4_1.Image = ((System.Drawing.Image)(resources.GetObject("labelst4_1.Image")));
             this.labelst4_1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst4_1.Location = new System.Drawing.Point(554, 258);
+            this.labelst4_1.Location = new System.Drawing.Point(739, 322);
+            this.labelst4_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst4_1.Name = "labelst4_1";
-            this.labelst4_1.Size = new System.Drawing.Size(33, 50);
+            this.labelst4_1.Size = new System.Drawing.Size(44, 62);
             this.labelst4_1.TabIndex = 41;
             this.labelst4_1.Text = "4_1";
             this.labelst4_1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -809,9 +850,10 @@
             // 
             this.labelst4_2.Image = ((System.Drawing.Image)(resources.GetObject("labelst4_2.Image")));
             this.labelst4_2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst4_2.Location = new System.Drawing.Point(503, 258);
+            this.labelst4_2.Location = new System.Drawing.Point(671, 322);
+            this.labelst4_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst4_2.Name = "labelst4_2";
-            this.labelst4_2.Size = new System.Drawing.Size(33, 50);
+            this.labelst4_2.Size = new System.Drawing.Size(44, 62);
             this.labelst4_2.TabIndex = 40;
             this.labelst4_2.Text = "4_2";
             this.labelst4_2.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -820,9 +862,10 @@
             // 
             this.labelst4_3.Image = ((System.Drawing.Image)(resources.GetObject("labelst4_3.Image")));
             this.labelst4_3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst4_3.Location = new System.Drawing.Point(453, 258);
+            this.labelst4_3.Location = new System.Drawing.Point(604, 322);
+            this.labelst4_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst4_3.Name = "labelst4_3";
-            this.labelst4_3.Size = new System.Drawing.Size(33, 50);
+            this.labelst4_3.Size = new System.Drawing.Size(44, 62);
             this.labelst4_3.TabIndex = 39;
             this.labelst4_3.Text = "4_3";
             this.labelst4_3.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -831,9 +874,10 @@
             // 
             this.labelst4_4.Image = ((System.Drawing.Image)(resources.GetObject("labelst4_4.Image")));
             this.labelst4_4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst4_4.Location = new System.Drawing.Point(404, 258);
+            this.labelst4_4.Location = new System.Drawing.Point(539, 322);
+            this.labelst4_4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst4_4.Name = "labelst4_4";
-            this.labelst4_4.Size = new System.Drawing.Size(33, 50);
+            this.labelst4_4.Size = new System.Drawing.Size(44, 62);
             this.labelst4_4.TabIndex = 38;
             this.labelst4_4.Text = "4_4";
             this.labelst4_4.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -842,9 +886,10 @@
             // 
             this.labelst4_6.Image = ((System.Drawing.Image)(resources.GetObject("labelst4_6.Image")));
             this.labelst4_6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst4_6.Location = new System.Drawing.Point(303, 258);
+            this.labelst4_6.Location = new System.Drawing.Point(404, 322);
+            this.labelst4_6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst4_6.Name = "labelst4_6";
-            this.labelst4_6.Size = new System.Drawing.Size(33, 50);
+            this.labelst4_6.Size = new System.Drawing.Size(44, 62);
             this.labelst4_6.TabIndex = 36;
             this.labelst4_6.Text = "4_6";
             this.labelst4_6.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -853,9 +898,10 @@
             // 
             this.labelst4_7.Image = ((System.Drawing.Image)(resources.GetObject("labelst4_7.Image")));
             this.labelst4_7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst4_7.Location = new System.Drawing.Point(254, 258);
+            this.labelst4_7.Location = new System.Drawing.Point(339, 322);
+            this.labelst4_7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst4_7.Name = "labelst4_7";
-            this.labelst4_7.Size = new System.Drawing.Size(33, 50);
+            this.labelst4_7.Size = new System.Drawing.Size(44, 62);
             this.labelst4_7.TabIndex = 35;
             this.labelst4_7.Text = "4_7";
             this.labelst4_7.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -864,9 +910,10 @@
             // 
             this.labelst4_8.Image = ((System.Drawing.Image)(resources.GetObject("labelst4_8.Image")));
             this.labelst4_8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst4_8.Location = new System.Drawing.Point(203, 258);
+            this.labelst4_8.Location = new System.Drawing.Point(271, 322);
+            this.labelst4_8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst4_8.Name = "labelst4_8";
-            this.labelst4_8.Size = new System.Drawing.Size(33, 50);
+            this.labelst4_8.Size = new System.Drawing.Size(44, 62);
             this.labelst4_8.TabIndex = 34;
             this.labelst4_8.Text = "4_8";
             this.labelst4_8.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -875,9 +922,10 @@
             // 
             this.labelst4_9.Image = ((System.Drawing.Image)(resources.GetObject("labelst4_9.Image")));
             this.labelst4_9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst4_9.Location = new System.Drawing.Point(153, 258);
+            this.labelst4_9.Location = new System.Drawing.Point(204, 322);
+            this.labelst4_9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst4_9.Name = "labelst4_9";
-            this.labelst4_9.Size = new System.Drawing.Size(33, 50);
+            this.labelst4_9.Size = new System.Drawing.Size(44, 62);
             this.labelst4_9.TabIndex = 33;
             this.labelst4_9.Text = "4_9";
             this.labelst4_9.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -886,9 +934,10 @@
             // 
             this.labelst5_1.Image = ((System.Drawing.Image)(resources.GetObject("labelst5_1.Image")));
             this.labelst5_1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst5_1.Location = new System.Drawing.Point(554, 319);
+            this.labelst5_1.Location = new System.Drawing.Point(739, 399);
+            this.labelst5_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst5_1.Name = "labelst5_1";
-            this.labelst5_1.Size = new System.Drawing.Size(33, 50);
+            this.labelst5_1.Size = new System.Drawing.Size(44, 62);
             this.labelst5_1.TabIndex = 32;
             this.labelst5_1.Text = "5_1";
             this.labelst5_1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -897,9 +946,10 @@
             // 
             this.labelst3_1.Image = ((System.Drawing.Image)(resources.GetObject("labelst3_1.Image")));
             this.labelst3_1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst3_1.Location = new System.Drawing.Point(554, 198);
+            this.labelst3_1.Location = new System.Drawing.Point(739, 248);
+            this.labelst3_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst3_1.Name = "labelst3_1";
-            this.labelst3_1.Size = new System.Drawing.Size(33, 50);
+            this.labelst3_1.Size = new System.Drawing.Size(44, 62);
             this.labelst3_1.TabIndex = 31;
             this.labelst3_1.Text = "3_1";
             this.labelst3_1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -908,9 +958,10 @@
             // 
             this.labelst3_2.Image = ((System.Drawing.Image)(resources.GetObject("labelst3_2.Image")));
             this.labelst3_2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst3_2.Location = new System.Drawing.Point(503, 198);
+            this.labelst3_2.Location = new System.Drawing.Point(671, 248);
+            this.labelst3_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst3_2.Name = "labelst3_2";
-            this.labelst3_2.Size = new System.Drawing.Size(33, 50);
+            this.labelst3_2.Size = new System.Drawing.Size(44, 62);
             this.labelst3_2.TabIndex = 30;
             this.labelst3_2.Text = "3_2";
             this.labelst3_2.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -919,9 +970,10 @@
             // 
             this.labelst3_3.Image = ((System.Drawing.Image)(resources.GetObject("labelst3_3.Image")));
             this.labelst3_3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst3_3.Location = new System.Drawing.Point(453, 198);
+            this.labelst3_3.Location = new System.Drawing.Point(604, 248);
+            this.labelst3_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst3_3.Name = "labelst3_3";
-            this.labelst3_3.Size = new System.Drawing.Size(33, 50);
+            this.labelst3_3.Size = new System.Drawing.Size(44, 62);
             this.labelst3_3.TabIndex = 29;
             this.labelst3_3.Text = "3_3";
             this.labelst3_3.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -930,9 +982,10 @@
             // 
             this.labelst3_4.Image = ((System.Drawing.Image)(resources.GetObject("labelst3_4.Image")));
             this.labelst3_4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst3_4.Location = new System.Drawing.Point(404, 198);
+            this.labelst3_4.Location = new System.Drawing.Point(539, 248);
+            this.labelst3_4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst3_4.Name = "labelst3_4";
-            this.labelst3_4.Size = new System.Drawing.Size(33, 50);
+            this.labelst3_4.Size = new System.Drawing.Size(44, 62);
             this.labelst3_4.TabIndex = 28;
             this.labelst3_4.Text = "3_4";
             this.labelst3_4.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -941,9 +994,10 @@
             // 
             this.labelst3_5.Image = ((System.Drawing.Image)(resources.GetObject("labelst3_5.Image")));
             this.labelst3_5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst3_5.Location = new System.Drawing.Point(353, 198);
+            this.labelst3_5.Location = new System.Drawing.Point(471, 248);
+            this.labelst3_5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst3_5.Name = "labelst3_5";
-            this.labelst3_5.Size = new System.Drawing.Size(33, 50);
+            this.labelst3_5.Size = new System.Drawing.Size(44, 62);
             this.labelst3_5.TabIndex = 27;
             this.labelst3_5.Text = "3_5";
             this.labelst3_5.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -952,9 +1006,10 @@
             // 
             this.labelst3_6.Image = ((System.Drawing.Image)(resources.GetObject("labelst3_6.Image")));
             this.labelst3_6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst3_6.Location = new System.Drawing.Point(303, 198);
+            this.labelst3_6.Location = new System.Drawing.Point(404, 248);
+            this.labelst3_6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst3_6.Name = "labelst3_6";
-            this.labelst3_6.Size = new System.Drawing.Size(33, 50);
+            this.labelst3_6.Size = new System.Drawing.Size(44, 62);
             this.labelst3_6.TabIndex = 26;
             this.labelst3_6.Text = "3_6";
             this.labelst3_6.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -963,9 +1018,10 @@
             // 
             this.labelst3_7.Image = ((System.Drawing.Image)(resources.GetObject("labelst3_7.Image")));
             this.labelst3_7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst3_7.Location = new System.Drawing.Point(254, 198);
+            this.labelst3_7.Location = new System.Drawing.Point(339, 248);
+            this.labelst3_7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst3_7.Name = "labelst3_7";
-            this.labelst3_7.Size = new System.Drawing.Size(33, 50);
+            this.labelst3_7.Size = new System.Drawing.Size(44, 62);
             this.labelst3_7.TabIndex = 25;
             this.labelst3_7.Text = "3_7";
             this.labelst3_7.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -974,9 +1030,10 @@
             // 
             this.labelst3_8.Image = ((System.Drawing.Image)(resources.GetObject("labelst3_8.Image")));
             this.labelst3_8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst3_8.Location = new System.Drawing.Point(203, 198);
+            this.labelst3_8.Location = new System.Drawing.Point(271, 248);
+            this.labelst3_8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst3_8.Name = "labelst3_8";
-            this.labelst3_8.Size = new System.Drawing.Size(33, 50);
+            this.labelst3_8.Size = new System.Drawing.Size(44, 62);
             this.labelst3_8.TabIndex = 24;
             this.labelst3_8.Text = "3_8";
             this.labelst3_8.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -985,9 +1042,10 @@
             // 
             this.labelst3_9.Image = ((System.Drawing.Image)(resources.GetObject("labelst3_9.Image")));
             this.labelst3_9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst3_9.Location = new System.Drawing.Point(153, 198);
+            this.labelst3_9.Location = new System.Drawing.Point(204, 248);
+            this.labelst3_9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst3_9.Name = "labelst3_9";
-            this.labelst3_9.Size = new System.Drawing.Size(33, 50);
+            this.labelst3_9.Size = new System.Drawing.Size(44, 62);
             this.labelst3_9.TabIndex = 23;
             this.labelst3_9.Text = "3_9";
             this.labelst3_9.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -996,9 +1054,10 @@
             // 
             this.labelst3_10.Image = ((System.Drawing.Image)(resources.GetObject("labelst3_10.Image")));
             this.labelst3_10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst3_10.Location = new System.Drawing.Point(104, 198);
+            this.labelst3_10.Location = new System.Drawing.Point(139, 248);
+            this.labelst3_10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst3_10.Name = "labelst3_10";
-            this.labelst3_10.Size = new System.Drawing.Size(33, 50);
+            this.labelst3_10.Size = new System.Drawing.Size(44, 62);
             this.labelst3_10.TabIndex = 22;
             this.labelst3_10.Text = "3_10";
             this.labelst3_10.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -1007,9 +1066,10 @@
             // 
             this.labelst2_1.Image = ((System.Drawing.Image)(resources.GetObject("labelst2_1.Image")));
             this.labelst2_1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst2_1.Location = new System.Drawing.Point(554, 138);
+            this.labelst2_1.Location = new System.Drawing.Point(739, 172);
+            this.labelst2_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst2_1.Name = "labelst2_1";
-            this.labelst2_1.Size = new System.Drawing.Size(33, 50);
+            this.labelst2_1.Size = new System.Drawing.Size(44, 62);
             this.labelst2_1.TabIndex = 21;
             this.labelst2_1.Text = "2_1";
             this.labelst2_1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -1018,9 +1078,10 @@
             // 
             this.labelst2_2.Image = ((System.Drawing.Image)(resources.GetObject("labelst2_2.Image")));
             this.labelst2_2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst2_2.Location = new System.Drawing.Point(503, 138);
+            this.labelst2_2.Location = new System.Drawing.Point(671, 172);
+            this.labelst2_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst2_2.Name = "labelst2_2";
-            this.labelst2_2.Size = new System.Drawing.Size(33, 50);
+            this.labelst2_2.Size = new System.Drawing.Size(44, 62);
             this.labelst2_2.TabIndex = 20;
             this.labelst2_2.Text = "2_2";
             this.labelst2_2.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -1029,9 +1090,10 @@
             // 
             this.labelst2_3.Image = ((System.Drawing.Image)(resources.GetObject("labelst2_3.Image")));
             this.labelst2_3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst2_3.Location = new System.Drawing.Point(453, 138);
+            this.labelst2_3.Location = new System.Drawing.Point(604, 172);
+            this.labelst2_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst2_3.Name = "labelst2_3";
-            this.labelst2_3.Size = new System.Drawing.Size(33, 50);
+            this.labelst2_3.Size = new System.Drawing.Size(44, 62);
             this.labelst2_3.TabIndex = 19;
             this.labelst2_3.Text = "2_3";
             this.labelst2_3.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -1040,9 +1102,10 @@
             // 
             this.labelst2_4.Image = ((System.Drawing.Image)(resources.GetObject("labelst2_4.Image")));
             this.labelst2_4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst2_4.Location = new System.Drawing.Point(404, 138);
+            this.labelst2_4.Location = new System.Drawing.Point(539, 172);
+            this.labelst2_4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst2_4.Name = "labelst2_4";
-            this.labelst2_4.Size = new System.Drawing.Size(33, 50);
+            this.labelst2_4.Size = new System.Drawing.Size(44, 62);
             this.labelst2_4.TabIndex = 18;
             this.labelst2_4.Text = "2_4";
             this.labelst2_4.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -1051,9 +1114,10 @@
             // 
             this.labelst2_5.Image = ((System.Drawing.Image)(resources.GetObject("labelst2_5.Image")));
             this.labelst2_5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst2_5.Location = new System.Drawing.Point(353, 138);
+            this.labelst2_5.Location = new System.Drawing.Point(471, 172);
+            this.labelst2_5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst2_5.Name = "labelst2_5";
-            this.labelst2_5.Size = new System.Drawing.Size(33, 50);
+            this.labelst2_5.Size = new System.Drawing.Size(44, 62);
             this.labelst2_5.TabIndex = 17;
             this.labelst2_5.Text = "2_5";
             this.labelst2_5.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -1062,9 +1126,10 @@
             // 
             this.labelst2_6.Image = ((System.Drawing.Image)(resources.GetObject("labelst2_6.Image")));
             this.labelst2_6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst2_6.Location = new System.Drawing.Point(303, 138);
+            this.labelst2_6.Location = new System.Drawing.Point(404, 172);
+            this.labelst2_6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst2_6.Name = "labelst2_6";
-            this.labelst2_6.Size = new System.Drawing.Size(33, 50);
+            this.labelst2_6.Size = new System.Drawing.Size(44, 62);
             this.labelst2_6.TabIndex = 16;
             this.labelst2_6.Text = "2_6";
             this.labelst2_6.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -1073,9 +1138,10 @@
             // 
             this.labelst2_7.Image = ((System.Drawing.Image)(resources.GetObject("labelst2_7.Image")));
             this.labelst2_7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst2_7.Location = new System.Drawing.Point(254, 138);
+            this.labelst2_7.Location = new System.Drawing.Point(339, 172);
+            this.labelst2_7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst2_7.Name = "labelst2_7";
-            this.labelst2_7.Size = new System.Drawing.Size(33, 50);
+            this.labelst2_7.Size = new System.Drawing.Size(44, 62);
             this.labelst2_7.TabIndex = 15;
             this.labelst2_7.Text = "2_7";
             this.labelst2_7.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -1084,9 +1150,10 @@
             // 
             this.labelst2_8.Image = ((System.Drawing.Image)(resources.GetObject("labelst2_8.Image")));
             this.labelst2_8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst2_8.Location = new System.Drawing.Point(203, 138);
+            this.labelst2_8.Location = new System.Drawing.Point(271, 172);
+            this.labelst2_8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst2_8.Name = "labelst2_8";
-            this.labelst2_8.Size = new System.Drawing.Size(33, 50);
+            this.labelst2_8.Size = new System.Drawing.Size(44, 62);
             this.labelst2_8.TabIndex = 14;
             this.labelst2_8.Text = "2_8";
             this.labelst2_8.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -1095,9 +1162,10 @@
             // 
             this.labelst2_9.Image = ((System.Drawing.Image)(resources.GetObject("labelst2_9.Image")));
             this.labelst2_9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst2_9.Location = new System.Drawing.Point(153, 138);
+            this.labelst2_9.Location = new System.Drawing.Point(204, 172);
+            this.labelst2_9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst2_9.Name = "labelst2_9";
-            this.labelst2_9.Size = new System.Drawing.Size(33, 50);
+            this.labelst2_9.Size = new System.Drawing.Size(44, 62);
             this.labelst2_9.TabIndex = 13;
             this.labelst2_9.Text = "2_9";
             this.labelst2_9.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -1106,9 +1174,10 @@
             // 
             this.labelst2_10.Image = ((System.Drawing.Image)(resources.GetObject("labelst2_10.Image")));
             this.labelst2_10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst2_10.Location = new System.Drawing.Point(104, 138);
+            this.labelst2_10.Location = new System.Drawing.Point(139, 172);
+            this.labelst2_10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst2_10.Name = "labelst2_10";
-            this.labelst2_10.Size = new System.Drawing.Size(33, 50);
+            this.labelst2_10.Size = new System.Drawing.Size(44, 62);
             this.labelst2_10.TabIndex = 12;
             this.labelst2_10.Text = "2_10";
             this.labelst2_10.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -1117,9 +1186,10 @@
             // 
             this.labelst1_6.Image = ((System.Drawing.Image)(resources.GetObject("labelst1_6.Image")));
             this.labelst1_6.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst1_6.Location = new System.Drawing.Point(303, 78);
+            this.labelst1_6.Location = new System.Drawing.Point(404, 98);
+            this.labelst1_6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst1_6.Name = "labelst1_6";
-            this.labelst1_6.Size = new System.Drawing.Size(33, 50);
+            this.labelst1_6.Size = new System.Drawing.Size(44, 62);
             this.labelst1_6.TabIndex = 11;
             this.labelst1_6.Text = "1_6";
             this.labelst1_6.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -1128,9 +1198,10 @@
             // 
             this.labelst1_7.Image = ((System.Drawing.Image)(resources.GetObject("labelst1_7.Image")));
             this.labelst1_7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst1_7.Location = new System.Drawing.Point(254, 78);
+            this.labelst1_7.Location = new System.Drawing.Point(339, 98);
+            this.labelst1_7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst1_7.Name = "labelst1_7";
-            this.labelst1_7.Size = new System.Drawing.Size(33, 50);
+            this.labelst1_7.Size = new System.Drawing.Size(44, 62);
             this.labelst1_7.TabIndex = 10;
             this.labelst1_7.Text = "1_7";
             this.labelst1_7.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -1139,9 +1210,10 @@
             // 
             this.labelst1_8.Image = ((System.Drawing.Image)(resources.GetObject("labelst1_8.Image")));
             this.labelst1_8.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst1_8.Location = new System.Drawing.Point(203, 78);
+            this.labelst1_8.Location = new System.Drawing.Point(271, 98);
+            this.labelst1_8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst1_8.Name = "labelst1_8";
-            this.labelst1_8.Size = new System.Drawing.Size(33, 50);
+            this.labelst1_8.Size = new System.Drawing.Size(44, 62);
             this.labelst1_8.TabIndex = 9;
             this.labelst1_8.Text = "1_8";
             this.labelst1_8.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -1150,9 +1222,10 @@
             // 
             this.labelst1_9.Image = ((System.Drawing.Image)(resources.GetObject("labelst1_9.Image")));
             this.labelst1_9.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst1_9.Location = new System.Drawing.Point(153, 78);
+            this.labelst1_9.Location = new System.Drawing.Point(204, 98);
+            this.labelst1_9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst1_9.Name = "labelst1_9";
-            this.labelst1_9.Size = new System.Drawing.Size(33, 50);
+            this.labelst1_9.Size = new System.Drawing.Size(44, 62);
             this.labelst1_9.TabIndex = 8;
             this.labelst1_9.Text = "1_9";
             this.labelst1_9.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -1161,9 +1234,10 @@
             // 
             this.labelst1_10.Image = ((System.Drawing.Image)(resources.GetObject("labelst1_10.Image")));
             this.labelst1_10.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst1_10.Location = new System.Drawing.Point(104, 78);
+            this.labelst1_10.Location = new System.Drawing.Point(139, 98);
+            this.labelst1_10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst1_10.Name = "labelst1_10";
-            this.labelst1_10.Size = new System.Drawing.Size(33, 50);
+            this.labelst1_10.Size = new System.Drawing.Size(44, 62);
             this.labelst1_10.TabIndex = 7;
             this.labelst1_10.Text = "1_10";
             this.labelst1_10.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -1172,9 +1246,10 @@
             // 
             this.labelst1_5.Image = ((System.Drawing.Image)(resources.GetObject("labelst1_5.Image")));
             this.labelst1_5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst1_5.Location = new System.Drawing.Point(353, 78);
+            this.labelst1_5.Location = new System.Drawing.Point(471, 98);
+            this.labelst1_5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst1_5.Name = "labelst1_5";
-            this.labelst1_5.Size = new System.Drawing.Size(33, 50);
+            this.labelst1_5.Size = new System.Drawing.Size(44, 62);
             this.labelst1_5.TabIndex = 6;
             this.labelst1_5.Text = "1_5";
             this.labelst1_5.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -1183,9 +1258,10 @@
             // 
             this.labelst1_4.Image = ((System.Drawing.Image)(resources.GetObject("labelst1_4.Image")));
             this.labelst1_4.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst1_4.Location = new System.Drawing.Point(404, 78);
+            this.labelst1_4.Location = new System.Drawing.Point(539, 98);
+            this.labelst1_4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst1_4.Name = "labelst1_4";
-            this.labelst1_4.Size = new System.Drawing.Size(33, 50);
+            this.labelst1_4.Size = new System.Drawing.Size(44, 62);
             this.labelst1_4.TabIndex = 5;
             this.labelst1_4.Text = "1_4";
             this.labelst1_4.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -1194,9 +1270,10 @@
             // 
             this.labelst1_3.Image = ((System.Drawing.Image)(resources.GetObject("labelst1_3.Image")));
             this.labelst1_3.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst1_3.Location = new System.Drawing.Point(453, 78);
+            this.labelst1_3.Location = new System.Drawing.Point(604, 98);
+            this.labelst1_3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst1_3.Name = "labelst1_3";
-            this.labelst1_3.Size = new System.Drawing.Size(33, 50);
+            this.labelst1_3.Size = new System.Drawing.Size(44, 62);
             this.labelst1_3.TabIndex = 4;
             this.labelst1_3.Text = "1_3";
             this.labelst1_3.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -1205,9 +1282,10 @@
             // 
             this.labelst1_2.Image = ((System.Drawing.Image)(resources.GetObject("labelst1_2.Image")));
             this.labelst1_2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst1_2.Location = new System.Drawing.Point(503, 78);
+            this.labelst1_2.Location = new System.Drawing.Point(671, 98);
+            this.labelst1_2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst1_2.Name = "labelst1_2";
-            this.labelst1_2.Size = new System.Drawing.Size(33, 50);
+            this.labelst1_2.Size = new System.Drawing.Size(44, 62);
             this.labelst1_2.TabIndex = 3;
             this.labelst1_2.Text = "1_2";
             this.labelst1_2.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -1216,9 +1294,10 @@
             // 
             this.labelst1_1.Image = ((System.Drawing.Image)(resources.GetObject("labelst1_1.Image")));
             this.labelst1_1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labelst1_1.Location = new System.Drawing.Point(554, 78);
+            this.labelst1_1.Location = new System.Drawing.Point(739, 98);
+            this.labelst1_1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelst1_1.Name = "labelst1_1";
-            this.labelst1_1.Size = new System.Drawing.Size(33, 50);
+            this.labelst1_1.Size = new System.Drawing.Size(44, 62);
             this.labelst1_1.TabIndex = 2;
             this.labelst1_1.Text = "1_1";
             this.labelst1_1.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -1227,9 +1306,10 @@
             // 
             this.labeltea.Image = global::Blue_Spider.Properties.Resources.教师;
             this.labeltea.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.labeltea.Location = new System.Drawing.Point(42, 258);
+            this.labeltea.Location = new System.Drawing.Point(56, 322);
+            this.labeltea.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labeltea.Name = "labeltea";
-            this.labeltea.Size = new System.Drawing.Size(48, 50);
+            this.labeltea.Size = new System.Drawing.Size(64, 62);
             this.labeltea.TabIndex = 1;
             this.labeltea.Text = "Teacher";
             this.labeltea.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -1262,7 +1342,7 @@
             this.toolStripButton13});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(697, 59);
+            this.toolStrip1.Size = new System.Drawing.Size(930, 74);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -1272,7 +1352,7 @@
             this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(23, 56);
+            this.toolStripButton3.Size = new System.Drawing.Size(23, 71);
             this.toolStripButton3.Text = "  ";
             this.toolStripButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -1285,7 +1365,7 @@
             this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(106, 56);
+            this.toolStripButton1.Size = new System.Drawing.Size(132, 71);
             this.toolStripButton1.Text = "核心功能";
             this.toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -1295,7 +1375,7 @@
             this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(23, 56);
+            this.toolStripButton4.Size = new System.Drawing.Size(23, 71);
             this.toolStripButton4.Text = "  ";
             this.toolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -1306,7 +1386,7 @@
             this.tsbtn_BlankScreen.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tsbtn_BlankScreen.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbtn_BlankScreen.Name = "tsbtn_BlankScreen";
-            this.tsbtn_BlankScreen.Size = new System.Drawing.Size(64, 56);
+            this.tsbtn_BlankScreen.Size = new System.Drawing.Size(73, 71);
             this.tsbtn_BlankScreen.Text = "黑屏肃静";
             this.tsbtn_BlankScreen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -1316,7 +1396,7 @@
             this.toolStripButton16.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton16.Image")));
             this.toolStripButton16.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton16.Name = "toolStripButton16";
-            this.toolStripButton16.Size = new System.Drawing.Size(23, 56);
+            this.toolStripButton16.Size = new System.Drawing.Size(23, 71);
             this.toolStripButton16.Text = "  ";
             this.toolStripButton16.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -1326,7 +1406,7 @@
             this.toolStripButton7.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton7.Image")));
             this.toolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton7.Name = "toolStripButton7";
-            this.toolStripButton7.Size = new System.Drawing.Size(23, 56);
+            this.toolStripButton7.Size = new System.Drawing.Size(23, 71);
             this.toolStripButton7.Text = "  ";
             this.toolStripButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -1336,7 +1416,7 @@
             this.toolStripButton9.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton9.Image")));
             this.toolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton9.Name = "toolStripButton9";
-            this.toolStripButton9.Size = new System.Drawing.Size(23, 56);
+            this.toolStripButton9.Size = new System.Drawing.Size(23, 71);
             this.toolStripButton9.Text = "  ";
             this.toolStripButton9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -1347,7 +1427,7 @@
             this.tsbtn_Monitoring.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tsbtn_Monitoring.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbtn_Monitoring.Name = "tsbtn_Monitoring";
-            this.tsbtn_Monitoring.Size = new System.Drawing.Size(65, 56);
+            this.tsbtn_Monitoring.Size = new System.Drawing.Size(73, 71);
             this.tsbtn_Monitoring.Text = "屏幕监视";
             this.tsbtn_Monitoring.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbtn_Monitoring.Click += new System.EventHandler(this.tsbtn_Monitoring_Click);
@@ -1358,7 +1438,7 @@
             this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
             this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(23, 56);
+            this.toolStripButton5.Size = new System.Drawing.Size(23, 71);
             this.toolStripButton5.Text = "  ";
             this.toolStripButton5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -1368,7 +1448,7 @@
             this.toolStripButton10.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton10.Image")));
             this.toolStripButton10.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton10.Name = "toolStripButton10";
-            this.toolStripButton10.Size = new System.Drawing.Size(23, 56);
+            this.toolStripButton10.Size = new System.Drawing.Size(23, 71);
             this.toolStripButton10.Text = "  ";
             this.toolStripButton10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -1378,7 +1458,7 @@
             this.toolStripButton12.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton12.Image")));
             this.toolStripButton12.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton12.Name = "toolStripButton12";
-            this.toolStripButton12.Size = new System.Drawing.Size(23, 56);
+            this.toolStripButton12.Size = new System.Drawing.Size(23, 71);
             this.toolStripButton12.Text = "  ";
             this.toolStripButton12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -1389,7 +1469,7 @@
             this.tsbtn_OnlineDiscuss.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tsbtn_OnlineDiscuss.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbtn_OnlineDiscuss.Name = "tsbtn_OnlineDiscuss";
-            this.tsbtn_OnlineDiscuss.Size = new System.Drawing.Size(72, 56);
+            this.tsbtn_OnlineDiscuss.Size = new System.Drawing.Size(73, 71);
             this.tsbtn_OnlineDiscuss.Text = "联机讨论";
             this.tsbtn_OnlineDiscuss.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbtn_OnlineDiscuss.Click += new System.EventHandler(this.tsbtn_OnlineDiscuss_Click);
@@ -1400,7 +1480,7 @@
             this.toolStripButton19.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton19.Image")));
             this.toolStripButton19.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton19.Name = "toolStripButton19";
-            this.toolStripButton19.Size = new System.Drawing.Size(23, 56);
+            this.toolStripButton19.Size = new System.Drawing.Size(23, 71);
             this.toolStripButton19.Text = "  ";
             this.toolStripButton19.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -1410,7 +1490,7 @@
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(23, 56);
+            this.toolStripButton2.Size = new System.Drawing.Size(23, 71);
             this.toolStripButton2.Text = "  ";
             this.toolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -1420,7 +1500,7 @@
             this.toolStripButton15.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton15.Image")));
             this.toolStripButton15.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton15.Name = "toolStripButton15";
-            this.toolStripButton15.Size = new System.Drawing.Size(23, 56);
+            this.toolStripButton15.Size = new System.Drawing.Size(23, 71);
             this.toolStripButton15.Text = "  ";
             this.toolStripButton15.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -1431,7 +1511,7 @@
             this.tsbtn_ElectronicName.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.tsbtn_ElectronicName.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbtn_ElectronicName.Name = "tsbtn_ElectronicName";
-            this.tsbtn_ElectronicName.Size = new System.Drawing.Size(64, 56);
+            this.tsbtn_ElectronicName.Size = new System.Drawing.Size(73, 71);
             this.tsbtn_ElectronicName.Text = "电子点名";
             this.tsbtn_ElectronicName.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.tsbtn_ElectronicName.Click += new System.EventHandler(this.tsbtn_ElectronicName_Click);
@@ -1442,7 +1522,7 @@
             this.toolStripButton20.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton20.Image")));
             this.toolStripButton20.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton20.Name = "toolStripButton20";
-            this.toolStripButton20.Size = new System.Drawing.Size(23, 56);
+            this.toolStripButton20.Size = new System.Drawing.Size(23, 71);
             this.toolStripButton20.Text = "  ";
             this.toolStripButton20.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -1452,7 +1532,7 @@
             this.toolStripButton17.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton17.Image")));
             this.toolStripButton17.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton17.Name = "toolStripButton17";
-            this.toolStripButton17.Size = new System.Drawing.Size(23, 56);
+            this.toolStripButton17.Size = new System.Drawing.Size(23, 71);
             this.toolStripButton17.Text = "  ";
             this.toolStripButton17.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -1462,7 +1542,7 @@
             this.toolStripButton18.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton18.Image")));
             this.toolStripButton18.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton18.Name = "toolStripButton18";
-            this.toolStripButton18.Size = new System.Drawing.Size(23, 4);
+            this.toolStripButton18.Size = new System.Drawing.Size(23, 71);
             this.toolStripButton18.Text = "  ";
             this.toolStripButton18.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -1472,7 +1552,7 @@
             this.toolStripButton21.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton21.Image")));
             this.toolStripButton21.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton21.Name = "toolStripButton21";
-            this.toolStripButton21.Size = new System.Drawing.Size(23, 4);
+            this.toolStripButton21.Size = new System.Drawing.Size(23, 71);
             this.toolStripButton21.Text = "  ";
             this.toolStripButton21.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -1482,16 +1562,17 @@
             this.toolStripButton13.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton13.Image")));
             this.toolStripButton13.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton13.Name = "toolStripButton13";
-            this.toolStripButton13.Size = new System.Drawing.Size(23, 4);
+            this.toolStripButton13.Size = new System.Drawing.Size(23, 71);
             this.toolStripButton13.Text = "  ";
             this.toolStripButton13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(890, 705);
+            this.ClientSize = new System.Drawing.Size(1187, 881);
             this.Controls.Add(this.splitContainer1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

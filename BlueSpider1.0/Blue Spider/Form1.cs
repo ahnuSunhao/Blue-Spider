@@ -224,5 +224,15 @@ namespace Blue_Spider
             new screenCapturing(clientConnectionItems).ShowDialog();
         }
 
+        private void btn_JobView_Click(object sender, EventArgs e)
+        {
+            new CheckHomework().ShowDialog();
+        }
+
+        private void btn_ShutDown_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
