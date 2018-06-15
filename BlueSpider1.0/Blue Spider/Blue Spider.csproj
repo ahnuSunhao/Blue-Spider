@@ -52,6 +52,12 @@
     <Compile Include="CheckHomework.Designer.cs">
       <DependentUpon>CheckHomework.cs</DependentUpon>
     </Compile>
+    <Compile Include="CloseComputer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloseComputer.Designer.cs">
+      <DependentUpon>CloseComputer.cs</DependentUpon>
+    </Compile>
     <Compile Include="ElectronicName.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     <Compile Include="tools\Until.cs" />
     <EmbeddedResource Include="CheckHomework.resx">
       <DependentUpon>CheckHomework.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CloseComputer.resx">
+      <DependentUpon>CloseComputer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ElectronicName.resx">
       <DependentUpon>ElectronicName.cs</DependentUpon>

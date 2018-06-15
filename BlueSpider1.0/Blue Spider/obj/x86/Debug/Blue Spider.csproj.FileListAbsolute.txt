@@ -62,3 +62,4 @@ C:\Users\sunhao\Desktop\新建文件夹 (2)\BlueSpider1.0\Blue Spider\obj\x86\De
 C:\Users\sunhao\Desktop\新建文件夹 (2)\BlueSpider1.0\Blue Spider\obj\x86\Debug\Blue_Spider.screenCapturing.resources
 C:\Users\sunhao\Desktop\新建文件夹 (2)\BlueSpider1.0\Blue Spider\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\sunhao\Desktop\新建文件夹 (2)\BlueSpider1.0\Blue Spider\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\KC\Desktop\Blue-Spider\BlueSpider1.0\Blue Spider\obj\x86\Debug\Blue_Spider.CloseComputer.resources
