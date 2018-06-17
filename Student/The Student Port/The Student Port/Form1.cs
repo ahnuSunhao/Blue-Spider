@@ -22,7 +22,7 @@ namespace The_Student_Port
          Thread threadclient = null;
          Socket socketclient = null;
          private string strRevMsg = " ";
-
+         private string teaAddr = null;
          private NetworkStream ns = null;
          private StreamReader sr = null;
          private StreamWriter sw = null;
@@ -33,45 +33,23 @@ namespace The_Student_Port
          bool isError = false;
 
 
-
-         public Form1()
-        {
-            InitializeComponent();
-            StartPosition = FormStartPosition.CenterScreen;
-            //关闭对文本框的非法线程操作检查  
-            TextBox.CheckForIllegalCrossThreadCalls = false;
-            init();
-           // MessageBox.Show(shou);
-        }
-
-         private void Form1_Load(object sender, EventArgs e)
+         public Form1(string teaAddr , Socket socket)
          {
+             InitializeComponent();
+             StartPosition = FormStartPosition.CenterScreen;
+             //关闭对文本框的非法线程操作检查  
+             TextBox.CheckForIllegalCrossThreadCalls = false;
 
+             this.teaAddr = teaAddr;
+             this.socketclient = socket;
+
+             threadclient = new Thread(ReceiveFromServer);
+             threadclient.IsBackground = true;
+             threadclient.Start();
+             
          }
 
-        private void init() {
-            socketclient = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            //连接服务器的IP地址  
-            IPAddress address = IPAddress.Parse("192.168.29.128");
-            //将获取的IP地址和端口号绑定在网络节点上  
-            IPEndPoint point = new IPEndPoint(address, 8989);
-            try
-            {
-                //客户端套接字连接到网络节点上，用的是Connect  
-                socketclient.Connect(point);
-            }
-            catch (Exception)
-            {
-                Debug.WriteLine("连接失败\r\n");
-                return;
 
-            }
-            threadclient = new Thread(ReceiveFromServer);
-            threadclient.IsBackground = true;          
-            threadclient.Start();
-           
-       
-        }
         private void toolStripButton9_Click(object sender, EventArgs e)
         {
             if (shou.Equals("002"))
@@ -84,10 +62,7 @@ namespace The_Student_Port
             
           
         }
-        private void sendname()
-        {
-           
-        }
+
         private void ReceiveFromServer()
         {
             int x = 0;
@@ -144,8 +119,9 @@ namespace The_Student_Port
 
         private void toolStripButton5_Click(object sender, EventArgs e)
         {
-            Client client = new Client();
-            client.ClientSendMsg("001");
+            byte[] arrClientSendMsg = Encoding.UTF8.GetBytes("001");
+            //调用客户端套接字发送字节数组     
+            socketclient.Send(arrClientSendMsg);
           
         }
 
@@ -167,7 +143,7 @@ namespace The_Student_Port
             if (shou.Equals("003"))
             {
                 
-                Send_name send = new Send_name();
+                Send_name send = new Send_name(teaAddr);
                 send.Show();
                 timer1.Enabled = false;
             }
@@ -222,7 +198,7 @@ namespace The_Student_Port
             try
             {
                 tcpclient = new TcpClient();
-                tcpclient.Connect("127.0.0.1", 8080);//127.0.0.1
+                tcpclient.Connect(teaAddr, 8080);//127.0.0.1
                 if (tcpclient.Connected)
                 {
                     ns = tcpclient.GetStream();

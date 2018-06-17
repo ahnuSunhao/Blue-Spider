@@ -16,17 +16,26 @@ namespace The_Student_Port
         private IPEndPoint endpoint;
         private IPEndPoint iep;
         private Socket socket;
+        private string teaAddr;
+
         public Send_name()
         {
+          
+        }
+
+        public Send_name(string teaAddr)
+        {
             InitializeComponent();
+            this.teaAddr = teaAddr;
             Control.CheckForIllegalCrossThreadCalls = false;
             initUDP();
 
         }
+
         private void initUDP()
         {
             TextBox.CheckForIllegalCrossThreadCalls = false;
-            iep = new IPEndPoint(IPAddress.Parse("192.168.43.179"), 8888);//初始化一个发送广播和指定端口的网络端口实例
+            iep = new IPEndPoint(IPAddress.Parse(teaAddr), 8888);//初始化一个发送广播和指定端口的网络端口实例
             socket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);//初始化一个Scoket实习,采用UDP传输
         }
         /// <summary>

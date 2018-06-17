@@ -21,3 +21,4 @@ C:\Users\sunhao\Desktop\Student\The Student Port\The Student Port\obj\x86\Debug\
 C:\Users\sunhao\Desktop\Student\The Student Port\The Student Port\obj\x86\Debug\The_Student_Port.Sumbit_job.resources
 C:\Users\sunhao\Desktop\Student\The Student Port\The Student Port\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\sunhao\Desktop\Student\The Student Port\The Student Port\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\sunhao\Desktop\Student\The Student Port\The Student Port\obj\x86\Debug\The_Student_Port.load.resources
