@@ -21,6 +21,7 @@ namespace Blue_Spider
         public TCP(){
             socketlisten = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp); 
             IPAddress address = IPAddress.Parse(GetIpAddress());  
+            
             IPEndPoint point = new IPEndPoint(address, 8989);  
             socketlisten.Bind(point); 
             socketlisten.Listen(20);  

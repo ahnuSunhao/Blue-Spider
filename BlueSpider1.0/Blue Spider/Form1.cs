@@ -25,6 +25,7 @@ namespace Blue_Spider
         public Form1()
         {
             tcp = new TCP();
+            //MessageBox.Show(tcp.GetIpAddress());
             InitializeComponent();
             clientConnectionItems = tcp.GetKeyValuePairs();
 
@@ -206,8 +207,7 @@ namespace Blue_Spider
             pb[7] = labelst1_8;
             pb[8] = labelst1_9;
             pb[9] = labelst1_10;
-           // pb[0].Text = "41";
-           // MyPing("172.16.93.41", 10);
+
             MyPing(tcp.GetIpAddress(), 10);
 
             for (int i = 0; i < 10; i++)

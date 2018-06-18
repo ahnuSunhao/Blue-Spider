@@ -118,6 +118,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "OnlineDiscuss";
             this.Text = "联机讨论";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OnlineDiscuss_FormClosing);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);

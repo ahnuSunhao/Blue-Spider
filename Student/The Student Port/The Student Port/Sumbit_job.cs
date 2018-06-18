@@ -54,36 +54,36 @@ namespace The_Student_Port
                                 FileName = recStr
                             };
 
-                            string savePath = "D://" + recStr;
-                                int rec = 0;
-                                long recFileLength = 0;
-                                bool firstWrite = true;
-                                using (FileStream fs = new FileStream(savePath, FileMode.Create, FileAccess.Write))
+                            string savePath = "E:\\" + recStr;
+                            int rec = 0;
+                            long recFileLength = 0;
+                            bool firstWrite = true;
+                            using (FileStream fs = new FileStream(savePath, FileMode.Create, FileAccess.Write))
+                            {
+                                while (recFileLength < fileLength)
                                 {
-                                    while (recFileLength < fileLength)
+                                    if (firstWrite)
                                     {
-                                        if (firstWrite)
-                                        {
-                                            fs.Write(buffer, 1, firstRcv - 1);
-                                            fs.Flush();
-                                            recFileLength += firstRcv - 1;
-                                            firstWrite = false;
-                                        }
-                                        else
-                                        {
-                                            rec = socketClient.Receive(buffer);
-                                            fs.Write(buffer, 0, rec);
-                                            fs.Flush();
-                                            recFileLength += rec;
-                                        }
+                                        fs.Write(buffer, 1, firstRcv - 1);
+                                        fs.Flush();
+                                        recFileLength += firstRcv - 1;
+                                        firstWrite = false;
                                     }
-                                    fs.Close();
+                                    else
+                                    {
+                                        rec = socketClient.Receive(buffer);
+                                        fs.Write(buffer, 0, rec);
+                                        fs.Flush();
+                                        recFileLength += rec;
+                                    }
                                 }
+                                fs.Close();
+                            }
 
-                                string fName = savePath.Substring(savePath.LastIndexOf("\\") + 1);
-                                string fPath = savePath.Substring(0, savePath.LastIndexOf("\\"));
-                                Message.AppendText("ZXY: " + GetTime() + "\r\n你成功接收了文件..." + fName + "\r\n保存路径为：" + fPath + "\r\n");
-                            
+                            string fName = savePath.Substring(savePath.LastIndexOf("\\") + 1);
+                            string fPath = savePath.Substring(0, savePath.LastIndexOf("\\"));
+                            Message.AppendText("ZXY: " + GetTime() + "\r\n你成功接收了文件..." + fName + "\r\n保存路径为：" + fPath + "\r\n");
+
                         }
                         if (buffer[0] == 2)
                         {
@@ -165,7 +165,7 @@ namespace The_Student_Port
             now = DateTime.Now;
             return now;
         }
-   
+
         private void ThreadBction()
         {
             this.Invoke(new MethodInvoker(UIBction));    //在主线程上执行UIAction方法
@@ -211,13 +211,13 @@ namespace The_Student_Port
 
         }
 
-       
-
-        
 
 
 
-      
+
+
+
+
 
 
     }

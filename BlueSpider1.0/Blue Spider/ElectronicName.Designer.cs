@@ -37,7 +37,7 @@
             // 
             this.btn_start_name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btn_start_name.Location = new System.Drawing.Point(14, 16);
-            this.btn_start_name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_start_name.Margin = new System.Windows.Forms.Padding(2);
             this.btn_start_name.Name = "btn_start_name";
             this.btn_start_name.Size = new System.Drawing.Size(376, 26);
             this.btn_start_name.TabIndex = 10;
@@ -51,7 +51,7 @@
             this.list_electronic_name.FormattingEnabled = true;
             this.list_electronic_name.ItemHeight = 12;
             this.list_electronic_name.Location = new System.Drawing.Point(14, 67);
-            this.list_electronic_name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.list_electronic_name.Margin = new System.Windows.Forms.Padding(2);
             this.list_electronic_name.Name = "list_electronic_name";
             this.list_electronic_name.Size = new System.Drawing.Size(378, 376);
             this.list_electronic_name.TabIndex = 25;
@@ -64,7 +64,7 @@
             this.list_title.Items.AddRange(new object[] {
             "    学生IP               学生姓名               时间"});
             this.list_title.Location = new System.Drawing.Point(14, 54);
-            this.list_title.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.list_title.Margin = new System.Windows.Forms.Padding(2);
             this.list_title.Name = "list_title";
             this.list_title.Size = new System.Drawing.Size(378, 16);
             this.list_title.TabIndex = 26;
@@ -80,6 +80,7 @@
             this.Controls.Add(this.btn_start_name);
             this.Name = "ElectronicName";
             this.Text = "电子点名";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ElectronicName_FormClosing);
             this.ResumeLayout(false);
 
         }

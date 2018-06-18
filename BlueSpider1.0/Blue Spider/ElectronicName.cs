@@ -18,6 +18,7 @@ namespace Blue_Spider
         private Socket socket;
         private int count = 0;
         private Dictionary<string, Socket> clientConnectionItems;
+        Thread thread;
 
         public ElectronicName(Dictionary<string, Socket> clientConnectionItems)
         {
@@ -39,7 +40,7 @@ namespace Blue_Spider
             socket.SetSocketOption(SocketOptionLevel.Socket, SocketOptionName.Broadcast, 1);
             IPEndPoint endpoint = new IPEndPoint(IPAddress.Parse("192.168.1.106"), 8888);
 
-            Thread thread = new Thread(new ThreadStart(ReceiveElecMessage));
+            thread = new Thread(new ThreadStart(ReceiveElecMessage));
             thread.IsBackground = true;
             thread.Start();
 
@@ -56,6 +57,7 @@ namespace Blue_Spider
                 if ((list_electronic_name.Items.Count == count) && count > 0)
                 {
                     MessageBox.Show("点名已结束");
+                    break;
                 }
                 else
                 {
@@ -80,6 +82,7 @@ namespace Blue_Spider
         /// <param name="e"></param>
         private void btn_start_name_Click(object sender, EventArgs e)
         {
+            count = 0;
             foreach (KeyValuePair<string, Socket> socket in clientConnectionItems)
             {
                 socket.Value.Send(Encoding.UTF8.GetBytes("003"));
@@ -98,6 +101,12 @@ namespace Blue_Spider
             DateTime currentTime = new DateTime();
             currentTime = DateTime.Now;
             return currentTime;
+        }
+
+        private void ElectronicName_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            thread.Abort();
+            socket.Close();
         }
     }
 }
