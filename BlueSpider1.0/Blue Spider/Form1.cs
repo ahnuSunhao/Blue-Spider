@@ -208,7 +208,7 @@ namespace Blue_Spider
             pb[9] = labelst1_10;
            // pb[0].Text = "41";
            // MyPing("172.16.93.41", 10);
-            MyPing("192.168.31.244", 10);
+            MyPing(tcp.GetIpAddress(), 10);
 
             for (int i = 0; i < 10; i++)
             {
