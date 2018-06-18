@@ -194,7 +194,7 @@ namespace Blue_Spider
             labelst1_10 = SetLight(labelst1_10);
             for (int i = 0; i < 10; i++)
             {
-                online[i] = 1;
+                online[i] =1;
             }
             pb[0] = labelst1_1;
             pb[1] = labelst1_2;
@@ -206,8 +206,9 @@ namespace Blue_Spider
             pb[7] = labelst1_8;
             pb[8] = labelst1_9;
             pb[9] = labelst1_10;
-
-            MyPing("172.16.93.41", 10);
+           // pb[0].Text = "41";
+           // MyPing("172.16.93.41", 10);
+            MyPing("192.168.31.244", 10);
 
             for (int i = 0; i < 10; i++)
             {
@@ -231,7 +232,22 @@ namespace Blue_Spider
 
         private void btn_ShutDown_Click(object sender, EventArgs e)
         {
-            new CloseComputer(clientConnectionItems).ShowDialog(); 
+            new CloseComputer(clientConnectionItems,0).ShowDialog(); 
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {//强行释放所有资源
+            Environment.Exit(0);
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void tsbtn_BlankScreen_Click(object sender, EventArgs e)
+        {
+            new CloseComputer(clientConnectionItems,1).ShowDialog();
         }
 
     }

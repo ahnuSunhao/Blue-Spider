@@ -12,6 +12,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Runtime.InteropServices;
 
 
 namespace The_Student_Port
@@ -168,6 +169,16 @@ namespace The_Student_Port
                     isError = false;
                 }
             }
+            if (shou.Equals("007"))
+            {
+                blackScreen();
+                //timer1.Enabled = false;
+            }
+            if (shou.Equals("008"))
+            {
+                backScreen();
+                //timer1.Enabled = false;
+            }
         }
 
         public void connect()
@@ -218,6 +229,34 @@ namespace The_Student_Port
         }
 
 
+        blackScreen b;
+        int flag_black = 0;
+        [DllImport("user32.dll")]
+        static extern void BlockInput(bool Block);
+
+        public void blackScreen()
+        {
+            if (flag_black == 0)
+            {
+                flag_black++;
+                BlockInput(true);
+                b = new blackScreen();
+                b.ShowDialog();
+            }
+            
+
+        }
+
+        public void backScreen()
+        {
+            if (flag_black == 1)
+            {
+                flag_black--;
+                BlockInput(false);
+                b.Close();
+            }
+        }
+
         [System.Runtime.InteropServices.DllImport("gdi32.dll")]
         private static extern IntPtr CreateDC(
               string lpszDriver, // 驱动名称 
@@ -267,6 +306,16 @@ namespace The_Student_Port
             ms.Flush();
             // this.pictureBox1.Image = Image.FromStream(ms); 
             //this.Visible = true; 
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Environment.Exit(0);
         }    
     }
 }

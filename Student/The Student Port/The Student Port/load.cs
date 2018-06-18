@@ -33,6 +33,7 @@ namespace The_Student_Port
             {
                 //客户端套接字连接到网络节点上，用的是Connect  
                 socketclient.Connect(point);
+                this.Hide();
                 new Form1(textBox_teaAddr.Text, socketclient).ShowDialog();
                 //this.Close();
             }

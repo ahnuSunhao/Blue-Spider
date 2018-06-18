@@ -37,7 +37,6 @@ C:\Users\sunhao\Desktop\BlueSpider1.0\Blue Spider\obj\x86\Debug\Blue Spider.pdb
 C:\Users\sunhao\Desktop\BlueSpider1.0\Blue Spider\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\Users\sunhao\Desktop\BlueSpider1.0\Blue Spider\obj\x86\Debug\Blue_Spider.ElectronicName.resources
 C:\Users\sunhao\Desktop\BlueSpider1.0\Blue Spider\obj\x86\Debug\Blue_Spider.OnlineDiscuss.resources
-C:\Users\sunhao\Desktop\BlueSpider1.0\Blue Spider\obj\x86\Debug\Blue_Spider.FileTransfer_1.resources
 C:\Users\sunhao\Desktop\BlueSpider1.0\Blue Spider\obj\x86\Debug\Blue_Spider.Form1.resources
 C:\Users\sunhao\Desktop\BlueSpider1.0\Blue Spider\obj\x86\Debug\Blue_Spider.Properties.Resources.resources
 C:\Users\sunhao\Desktop\BlueSpider1.0\Blue Spider\obj\x86\Debug\Blue_Spider.FileTransfer_2.resources
@@ -63,3 +62,5 @@ C:\Users\sunhao\Desktop\新建文件夹 (2)\BlueSpider1.0\Blue Spider\obj\x86\De
 C:\Users\sunhao\Desktop\新建文件夹 (2)\BlueSpider1.0\Blue Spider\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\sunhao\Desktop\新建文件夹 (2)\BlueSpider1.0\Blue Spider\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\KC\Desktop\Blue-Spider\BlueSpider1.0\Blue Spider\obj\x86\Debug\Blue_Spider.CloseComputer.resources
+C:\Users\sunhao\Desktop\BlueSpider1.0\Blue Spider\obj\x86\Debug\Blue_Spider.CheckHomework.resources
+C:\Users\sunhao\Desktop\BlueSpider1.0\Blue Spider\obj\x86\Debug\Blue_Spider.CloseComputer.resources

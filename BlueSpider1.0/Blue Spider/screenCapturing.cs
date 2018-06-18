@@ -83,10 +83,12 @@ namespace Blue_Spider
         private void btn_startMon_Click(object sender, EventArgs e)
         {
             aimSoc = IPAddress.Parse(textBox_adress.Text);
+            IPAddress ip;
             foreach (KeyValuePair<string, Socket> socket in clientConnectionItems)
             {
-                Console.WriteLine("IP：{0},Socket：{1}", socket.Key, socket.Value);
-                if (socket.Key == textBox_adress.Text)
+                ip =  ((System.Net.IPEndPoint)socket.Value.RemoteEndPoint).Address;//获取socket中的ip地址
+                //Console.WriteLine("IP：{0},Socket：{1}", socket.Key, socket.Value);
+                if (ip.ToString().Equals(textBox_adress.Text))
                 {
                     socket.Value.Send(Encoding.UTF8.GetBytes("006"));
                     tcpThread = new Thread(new ThreadStart(getRemote));
@@ -94,6 +96,11 @@ namespace Blue_Spider
                     break;
                 }
             }
+        }
+
+        private void screenCapturing_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            socket.Dispose();
         }
     }
 }

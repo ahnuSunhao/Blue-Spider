@@ -152,7 +152,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -261,7 +261,7 @@
             // 
             this.btn_quit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn_quit.Location = new System.Drawing.Point(29, 617);
-            this.btn_quit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_quit.Margin = new System.Windows.Forms.Padding(2);
             this.btn_quit.Name = "btn_quit";
             this.btn_quit.Size = new System.Drawing.Size(146, 44);
             this.btn_quit.TabIndex = 8;
@@ -273,7 +273,7 @@
             // 
             this.btn_finish.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.btn_finish.Location = new System.Drawing.Point(29, 524);
-            this.btn_finish.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_finish.Margin = new System.Windows.Forms.Padding(2);
             this.btn_finish.Name = "btn_finish";
             this.btn_finish.Size = new System.Drawing.Size(146, 42);
             this.btn_finish.TabIndex = 1;
@@ -297,7 +297,7 @@
             // 
             this.btn_FileTransfer.BackgroundImage = global::Blue_Spider.Properties.Resources.bt4;
             this.btn_FileTransfer.Location = new System.Drawing.Point(29, 420);
-            this.btn_FileTransfer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_FileTransfer.Margin = new System.Windows.Forms.Padding(2);
             this.btn_FileTransfer.Name = "btn_FileTransfer";
             this.btn_FileTransfer.Size = new System.Drawing.Size(146, 46);
             this.btn_FileTransfer.TabIndex = 4;
@@ -310,7 +310,7 @@
             // 
             this.btn_JobView.BackgroundImage = global::Blue_Spider.Properties.Resources.bt3;
             this.btn_JobView.Location = new System.Drawing.Point(29, 324);
-            this.btn_JobView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_JobView.Margin = new System.Windows.Forms.Padding(2);
             this.btn_JobView.Name = "btn_JobView";
             this.btn_JobView.Size = new System.Drawing.Size(146, 46);
             this.btn_JobView.TabIndex = 3;
@@ -323,7 +323,7 @@
             // 
             this.btn_ShutDown.BackgroundImage = global::Blue_Spider.Properties.Resources.bt2;
             this.btn_ShutDown.Location = new System.Drawing.Point(29, 239);
-            this.btn_ShutDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_ShutDown.Margin = new System.Windows.Forms.Padding(2);
             this.btn_ShutDown.Name = "btn_ShutDown";
             this.btn_ShutDown.Size = new System.Drawing.Size(146, 45);
             this.btn_ShutDown.TabIndex = 2;
@@ -336,7 +336,7 @@
             // 
             this.btn_HostScanning.BackgroundImage = global::Blue_Spider.Properties.Resources.bt1;
             this.btn_HostScanning.Location = new System.Drawing.Point(29, 151);
-            this.btn_HostScanning.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_HostScanning.Margin = new System.Windows.Forms.Padding(2);
             this.btn_HostScanning.Name = "btn_HostScanning";
             this.btn_HostScanning.Size = new System.Drawing.Size(146, 44);
             this.btn_HostScanning.TabIndex = 1;
@@ -349,7 +349,7 @@
             // 
             this.pictureBox1.BackgroundImage = global::Blue_Spider.Properties.Resources.蓝蜘蛛1;
             this.pictureBox1.Location = new System.Drawing.Point(2, 3);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(186, 70);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -1311,6 +1311,7 @@
             this.tsbtn_BlankScreen.Size = new System.Drawing.Size(64, 56);
             this.tsbtn_BlankScreen.Text = "黑屏肃静";
             this.tsbtn_BlankScreen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.tsbtn_BlankScreen.Click += new System.EventHandler(this.tsbtn_BlankScreen_Click);
             // 
             // toolStripButton16
             // 
@@ -1464,7 +1465,7 @@
             this.toolStripButton18.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton18.Image")));
             this.toolStripButton18.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton18.Name = "toolStripButton18";
-            this.toolStripButton18.Size = new System.Drawing.Size(23, 71);
+            this.toolStripButton18.Size = new System.Drawing.Size(23, 4);
             this.toolStripButton18.Text = "  ";
             this.toolStripButton18.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -1474,7 +1475,7 @@
             this.toolStripButton21.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton21.Image")));
             this.toolStripButton21.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton21.Name = "toolStripButton21";
-            this.toolStripButton21.Size = new System.Drawing.Size(23, 71);
+            this.toolStripButton21.Size = new System.Drawing.Size(23, 4);
             this.toolStripButton21.Text = "  ";
             this.toolStripButton21.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -1484,7 +1485,7 @@
             this.toolStripButton13.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton13.Image")));
             this.toolStripButton13.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton13.Name = "toolStripButton13";
-            this.toolStripButton13.Size = new System.Drawing.Size(23, 71);
+            this.toolStripButton13.Size = new System.Drawing.Size(23, 4);
             this.toolStripButton13.Text = "  ";
             this.toolStripButton13.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
@@ -1495,7 +1496,9 @@
             this.ClientSize = new System.Drawing.Size(890, 705);
             this.Controls.Add(this.splitContainer1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Teacher";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
