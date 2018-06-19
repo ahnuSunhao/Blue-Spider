@@ -306,6 +306,7 @@ namespace The_Student_Port
             ms.Flush();
             // this.pictureBox1.Image = Image.FromStream(ms); 
             //this.Visible = true; 
+            Thread.Sleep(10);
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
